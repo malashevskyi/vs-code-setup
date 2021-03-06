@@ -36,11 +36,21 @@
     return
     ```
     - So I got a lot of usefull additional shortcuts (e.g. `Caps Lock + arrows`, `Caps Lock + Shift / Win / Ctrl / Alt`)
+- Disable file filtering and set **A** and **Shift A** to create file and create folder
+  ```json
+  "workbench.list.automaticKeyboardNavigation": false
+  ```<br>
+  ![Better Comments](screenshots/8.png)<br>
+- [`vs code keybord shortcuts`](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) - default linux shortcuts (for Windows I use the same)
 
 
 ## VS Code shortcuts
+  ### find, compare
+  - **Ctrl + K D** - file: compare active file with saved
   ### settings
   - **Ctrl + comma** - open settings
+  ### selection
+  - **Ctrl + D** - add selection to next find match
   ### copy
   - **Ctrl + Shift + D** - copy line down
   - **Ctrl + Alt + P** - copy workspace path (your project's root folder) (install the [`extension`](https://github.com/malashevskyi/copy-workspace-path-vs-code-extension))
@@ -48,6 +58,7 @@
   - **Ctrl + PageDown** - open previuos editor (previous tab)
   - **Ctrl + PageUp** - open next editor (next tab)
   ### move
+  - **Ctrl + K Ctrl + D** - move cursor(selection) to next find match
   - **Ctrl + Shift + PageDown** - move editor (tab) left
   - **Ctrl + Shift + PageUp** - move editor (tab) rigth
   - **Ctrl + ArrowDown / ArrowUp** - move line up / down
@@ -131,7 +142,8 @@
   - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)<br>
    ![Bracket Pair Colorizer 2](screenshots/3.png)<br>
   - [`Code Spell Checker`](https://github.com/streetsidesoftware/vscode-spell-checker)
-  - [`Color Info`](https://github.com/mattbierner/vscode-color-info)
+  - [`Color Info`](https://github.com/mattbierner/vscode-color-info)<br>
+  ![Comment tagged templates](screenshots/5.png)<br>
   - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)<br>
   ![Comment tagged templates](screenshots/4.png)<br>
   - [`Clang-Format`](https://github.com/xaverh/vscode-clang-format-provider)
@@ -166,6 +178,7 @@
   - [`npm`](https://github.com/Microsoft/vscode-npm-scripts)
   - [`Path Intellisense`](https://github.com/ChristianKohler/PathIntellisense)
   - [`Prettier - Code formatter`](https://github.com/prettier/prettier-vscode)
+    - **Ctrl + Shift + I** - format document
   - [`Settings Sync`](https://github.com/shanalikhan/code-settings-sync)
   - [`Shader languages support for VS Code`](https://github.com/stef-levesque/vscode-shader)
   - [`Simple icons`](https://github.com/LaurentTreguier/vscode-simple-icons)
@@ -173,6 +186,9 @@
   - [`vscode-faker`](https://github.com/deerawan/vscode-faker)<br>
   ![Comment tagged templates](screenshots/6.png)<br>
   - [`vscode-styled-components`](https://github.com/styled-components/vscode-styled-components)
+  - [`DotENV`](https://github.com/mikestead/vscode-dotenv)
+  - [`Highlight Matching Tag`](https://github.com/vincaslt/vscode-highlight-matching-tag)
+  - [`Log File Highlighter`](https://github.com/emilast/vscode-logfile-highlighter)
 
 
     
