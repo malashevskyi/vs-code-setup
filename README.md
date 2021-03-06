@@ -94,30 +94,30 @@
   - [`One Dark Pro`](https://github.com/Binaryify/OneDark-Pro) - theme
   - [`Shortcut Menu Bar`](https://github.com/GorvGoyl/Shortcut-Menu-Bar-VSCode-Extension) - additional icons
   ![Shortcut Menu Bar Screenshot](screenshots/1.png)
-  ```js
-    // Ctrl + Alt + 1 - run task 'start' (you have to have this task in tasks.json)
-    "ShortcutMenuBar.userButton01Command": "workbench.action.tasks.runTask|npm run start",
-    // Ctrl + Alt + 2 - run task 'dev' (you have to have this task in tasks.json)
-    "ShortcutMenuBar.userButton02Command": "workbench.action.tasks.runTask|npm run dev",
-    // Ctrl + Alt + 3 - run task 'build' (you have to have this task in tasks.json)
-    "ShortcutMenuBar.userButton03Command": "workbench.action.tasks.runTask|npm run build",
-    "ShortcutMenuBar.userButton05Command": "",
-    "ShortcutMenuBar.userButton04Command": "",
-    "ShortcutMenuBar.userButton06Command": "",
-    "ShortcutMenuBar.userButton07Command": "",
-    // Ctrl + Alt + 8 - keyboard shortcuts
-    "ShortcutMenuBar.userButton08Command": "workbench.action.openGlobalKeybindings",
-    // Ctrl + Alt + 9 - open workspace in new wideo
-    "ShortcutMenuBar.userButton09Command": "workbench.action.openWorkspaceInNewWindow",
-    // Ctrl + Alt + 0 - change workspace in current window
-    "ShortcutMenuBar.userButton10Command": "workbench.action.openWorkspace",
-    "ShortcutMenuBar.navigateBack": false,
-    "ShortcutMenuBar.navigateForward": false,
-    "ShortcutMenuBar.openFilesList": false,
-    "ShortcutMenuBar.toggleTerminal": false,
-    "ShortcutMenuBar.beautify": false,
-    "explorer.openEditors.visible": 0,
-  ```
+    ```js
+      // Ctrl + Alt + 1 - run task 'start' (you have to have this task in tasks.json)
+      "ShortcutMenuBar.userButton01Command": "workbench.action.tasks.runTask|npm run start",
+      // Ctrl + Alt + 2 - run task 'dev' (you have to have this task in tasks.json)
+      "ShortcutMenuBar.userButton02Command": "workbench.action.tasks.runTask|npm run dev",
+      // Ctrl + Alt + 3 - run task 'build' (you have to have this task in tasks.json)
+      "ShortcutMenuBar.userButton03Command": "workbench.action.tasks.runTask|npm run build",
+      "ShortcutMenuBar.userButton05Command": "",
+      "ShortcutMenuBar.userButton04Command": "",
+      "ShortcutMenuBar.userButton06Command": "",
+      "ShortcutMenuBar.userButton07Command": "",
+      // Ctrl + Alt + 8 - keyboard shortcuts
+      "ShortcutMenuBar.userButton08Command": "workbench.action.openGlobalKeybindings",
+      // Ctrl + Alt + 9 - open workspace in new wideo
+      "ShortcutMenuBar.userButton09Command": "workbench.action.openWorkspaceInNewWindow",
+      // Ctrl + Alt + 0 - change workspace in current window
+      "ShortcutMenuBar.userButton10Command": "workbench.action.openWorkspace",
+      "ShortcutMenuBar.navigateBack": false,
+      "ShortcutMenuBar.navigateForward": false,
+      "ShortcutMenuBar.openFilesList": false,
+      "ShortcutMenuBar.toggleTerminal": false,
+      "ShortcutMenuBar.beautify": false,
+      "explorer.openEditors.visible": 0,
+    ```
   - [`Auto Rename Tag`](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
   - [`Better Comments`](https://github.com/aaron-bond/better-comments)<br>
   ![Better Comments](screenshots/2.png)<br>
@@ -146,10 +146,33 @@
     - **CapsLock + R** - conver hex to rgba
   - [`htmltagwrap`](https://github.com/bgashler1/vscode-htmltagwrap)
     - **Alt + W** - wrap
-  - sdf
-  - sdf
-  - sdf
-  - sfd
+  - [`Image preview`](https://github.com/kisstkondoros/gutter-preview)
+  - [`Import cost`](https://github.com/wix/import-cost)<br>
+  ![Comment tagged templates](screenshots/5.png)<br>
+  - [`Sass`](https://github.com/TheRealSyler/vscode-sass-indented)
+  - [`Markdown Preview Enhanced`](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)
+  - [`Nest Comments`](https://github.com/philsinatra/NestedCommentsVSCode)
+    - **Ctrl + /** - comment (**Ctrl + Alt + /** by default)
+    ```html
+    <!-- <body>
+      <!~~ <nav>
+        <!~~ <ul>
+          <!~~ <li></li> ~~>
+        </ul> ~~>
+      </nav> ~~>
+    </body> -->
+    ```
+  - [`Next.js snippets`](https://github.com/pulkitgangwar/next.js-snippets)
+  - [`npm`](https://github.com/Microsoft/vscode-npm-scripts)
+  - [`Path Intellisense`](https://github.com/ChristianKohler/PathIntellisense)
+  - [`Prettier - Code formatter`](https://github.com/prettier/prettier-vscode)
+  - [`Settings Sync`](https://github.com/shanalikhan/code-settings-sync)
+  - [`Shader languages support for VS Code`](https://github.com/stef-levesque/vscode-shader)
+  - [`Simple icons`](https://github.com/LaurentTreguier/vscode-simple-icons)
+  - [`Tabnine Autocomplete AI: JavaScript, Python, TypeScript, PHP, Go, Java, Ruby, C/C++, HTML/CSS, C#, Rust, SQL, Bash, Kotlin, React`](https://github.com/codota/tabnine-vscode)
+  - [`vscode-faker`](https://github.com/deerawan/vscode-faker)<br>
+  ![Comment tagged templates](screenshots/6.png)<br>
+  - [`vscode-styled-components`](https://github.com/styled-components/vscode-styled-components)
 
 
     
