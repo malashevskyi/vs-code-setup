@@ -119,8 +119,8 @@
     "explorer.openEditors.visible": 0,
   ```
   - [`Auto Rename Tag`](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-  - [`Better Comments`](https://github.com/aaron-bond/better-comments)
-  ![Better Comments](screenshots/2.png)
+  - [`Better Comments`](https://github.com/aaron-bond/better-comments)<br>
+  ![Better Comments](screenshots/2.png)<br>
   - [`Bookmarks`](https://github.com/alefragnani/vscode-bookmarks) - It helps you to navigate in your code, moving between important positions easily and quickly.
     - **CapsLock + DownArrow** - jump to next
     - **CapsLock + UpArrow** - jump to prev
@@ -128,12 +128,12 @@
     - **Ctrl + CapsLock  Ctrl + DownArrow** - bookmarks list
     - **Ctrl + CapsLock  Ctrl + T** - toggle
     - **Ctrl + CapsLock  Ctrl + L** - toggle label
-  - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)
-   ![Bracket Pair Colorizer 2](screenshots/3.png)
+  - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)<br>
+   ![Bracket Pair Colorizer 2](screenshots/3.png)<br>
   - [`Code Spell Checker`](https://github.com/streetsidesoftware/vscode-spell-checker)
   - [`Color Info`](https://github.com/mattbierner/vscode-color-info)
-  - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)
-  ![Comment tagged templates](screenshots/4.png)
+  - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)<br>
+  ![Comment tagged templates](screenshots/4.png)<br>
   - [`Clang-Format`](https://github.com/xaverh/vscode-clang-format-provider)
   - [`ES7 React/Redux/GraphQL/React-Native snippets`](https://github.com/dsznajder/vscode-es7-javascript-react-snippets)
   - [`ESLint`](https://github.com/Microsoft/vscode-eslint)
