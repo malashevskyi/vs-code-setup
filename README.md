@@ -94,3 +94,62 @@
   - [`One Dark Pro`](https://github.com/Binaryify/OneDark-Pro) - theme
   - [`Shortcut Menu Bar`](https://github.com/GorvGoyl/Shortcut-Menu-Bar-VSCode-Extension) - additional icons
   ![Shortcut Menu Bar Screenshot](screenshots/1.png)
+  ```js
+    // Ctrl + Alt + 1 - run task 'start' (you have to have this task in tasks.json)
+    "ShortcutMenuBar.userButton01Command": "workbench.action.tasks.runTask|npm run start",
+    // Ctrl + Alt + 2 - run task 'dev' (you have to have this task in tasks.json)
+    "ShortcutMenuBar.userButton02Command": "workbench.action.tasks.runTask|npm run dev",
+    // Ctrl + Alt + 3 - run task 'build' (you have to have this task in tasks.json)
+    "ShortcutMenuBar.userButton03Command": "workbench.action.tasks.runTask|npm run build",
+    "ShortcutMenuBar.userButton05Command": "",
+    "ShortcutMenuBar.userButton04Command": "",
+    "ShortcutMenuBar.userButton06Command": "",
+    "ShortcutMenuBar.userButton07Command": "",
+    // Ctrl + Alt + 8 - keyboard shortcuts
+    "ShortcutMenuBar.userButton08Command": "workbench.action.openGlobalKeybindings",
+    // Ctrl + Alt + 9 - open workspace in new wideo
+    "ShortcutMenuBar.userButton09Command": "workbench.action.openWorkspaceInNewWindow",
+    // Ctrl + Alt + 0 - change workspace in current window
+    "ShortcutMenuBar.userButton10Command": "workbench.action.openWorkspace",
+    "ShortcutMenuBar.navigateBack": false,
+    "ShortcutMenuBar.navigateForward": false,
+    "ShortcutMenuBar.openFilesList": false,
+    "ShortcutMenuBar.toggleTerminal": false,
+    "ShortcutMenuBar.beautify": false,
+    "explorer.openEditors.visible": 0,
+  ```
+  - [`Auto Rename Tag`](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+  - [`Better Comments`](https://github.com/aaron-bond/better-comments)
+  ![Better Comments](screenshots/2.png)
+  - [`Bookmarks`](https://github.com/alefragnani/vscode-bookmarks) - It helps you to navigate in your code, moving between important positions easily and quickly.
+    - **CapsLock + DownArrow** - jump to next
+    - **CapsLock + UpArrow** - jump to prev
+    - **Ctrl + CapsLock  Ctrl + UpArrow** - bookmarks list from all files
+    - **Ctrl + CapsLock  Ctrl + DownArrow** - bookmarks list
+    - **Ctrl + CapsLock  Ctrl + T** - toggle
+    - **Ctrl + CapsLock  Ctrl + L** - toggle label
+  - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)
+   ![Bracket Pair Colorizer 2](screenshots/3.png)
+  - [`Code Spell Checker`](https://github.com/streetsidesoftware/vscode-spell-checker)
+  - [`Color Info`](https://github.com/mattbierner/vscode-color-info)
+  - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)
+  ![Comment tagged templates](screenshots/4.png)
+  - [`Clang-Format`](https://github.com/xaverh/vscode-clang-format-provider)
+  - [`ES7 React/Redux/GraphQL/React-Native snippets`](https://github.com/dsznajder/vscode-es7-javascript-react-snippets)
+  - [`ESLint`](https://github.com/Microsoft/vscode-eslint)
+  - [`File Utils`](https://github.com/sleistner/vscode-fileutils) - easy duplicate a file or a directory
+    - **CapsLock + D** - File Utils: Duplicate, 
+  - [`Gist`](https://github.com/kenhowardpdx/vscode-gist)
+  - [`GitLens - Git supercharged`](https://github.com/eamodio/vscode-gitlens)
+  - [`Guides`](https://github.com/spywhere/vscode-guides) - visual vertical code lines
+  - [`hex-to-rgba`](https://github.com/DakshMiglani/VSCode-Hex-To-RGBA)
+    - **CapsLock + R** - conver hex to rgba
+  - [`htmltagwrap`](https://github.com/bgashler1/vscode-htmltagwrap)
+    - **Alt + W** - wrap
+  - sdf
+  - sdf
+  - sdf
+  - sfd
+
+
+    
