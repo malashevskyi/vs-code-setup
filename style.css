@@ -72,21 +72,29 @@ p {
   display: flex;
   padding: 8px 10px;
   position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 .shortcuts--item:nth-child(odd) {
   background-color: rgb(245, 245, 245);
+}
+.shortcuts--item:nth-child(odd):hover {
+  background-color: #bde9ff;
+}
+.shortcuts--item:nth-child(even):hover {
+  background-color: #bde9ff;
 }
 .shortcuts--item::before {
   content: '';
   height: calc(100% - 4px);
   width: 5px;
-  left: -2px;
+  left: -7px;
   background-color: rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 2px;
 }
 .shortcuts--item[tp]::before {
-  background-color: #1eea1e;
+  background-color: #028cd0;
 }
 
 .command-title {
@@ -264,10 +272,60 @@ p {
 }
 
 .marker {
-  background-color: #1eea1e; 
   width: 4px;
   height: 20px;
   position: relative;
-  display: inline-block;  
+  display: inline-block;
   margin: 0 4px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
+.marker.m {
+  background-color: #028cd0;
+}
+
+.can-copy {
+  position: relative;
+}
+
+.can-copy::before {
+  content: '!';
+  color: #028cd0;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid #028cd0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 10px;
+  box-sizing: content-box;
+}
+
+.success {
+  padding: 15px 20px;
+  height: 80px;
+  background-color: #fff;
+  border: 3px solid rgba(235, 235, 235, 0.8);
+  line-height: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: auto;
+  opacity: 1 !important;
+  background-color: #028cd0;
+  color: #fff;
+  transform: translate(-300%, 0);
+  transition: transform 0.3s ease;
+}
+.success.is-active {
+  transform: translate(0, 0);
+}
+.success span {
+  display: block;
+  width: 100%;
+}
+
+
