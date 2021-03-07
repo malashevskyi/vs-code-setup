@@ -1,0 +1,252 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  word-spacing: 2px;
+  padding: 0 20px 100px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0;
+}
+.title span {
+  display: block;
+  font-size: 70%;
+}
+.title-sign {
+  text-align: center;
+  font-size: 15px;
+  margin: 10px;
+  font-weight: normal;
+}
+
+.container {
+  width: 1550px;
+  margin: 0 auto;
+}
+
+.list {
+  list-style: none;
+  column-count: 3;
+  column-gap: 20px;
+  padding: 0;
+}
+
+.list--item {
+  border: 1px solid rgba(55, 55, 55, 0.04);
+  height: auto;
+  display: inline-block;
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 20px;
+  border-bottom: 2px solid gray;
+  padding: 10px;
+  margin: 0 0 5px 0;
+}
+
+.shortcuts {
+  list-style: none;
+  padding: 0;
+}
+.shortcuts--item {
+  display: flex;
+  padding: 8px 10px;
+  position: relative;
+}
+.shortcuts--item:nth-child(odd) {
+  background-color: rgb(245, 245, 245);
+}
+.shortcuts--item::before {
+  content: '';
+  height: calc(100% - 4px);
+  width: 5px;
+  left: -2px;
+  background-color: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 2px;
+}
+.shortcuts--item[tp]::before {
+  background-color: #1eea1e;
+}
+
+.command-title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal;
+  padding-left: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.command-title i:nth-of-type(1) {
+  margin-left: 10px;
+}
+.command-title i:nth-of-type(2) {
+  margin-right: 10px;
+}
+
+.command-title::before {
+  content: '';
+  position: absolute;
+  left: -5px;
+  top: 50%;
+  width: 10px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: black;
+}
+
+.command-title sup {
+  position: relative;
+  top: -4px;
+}
+
+.command {
+  font-size: 13px;
+  padding-right: 20px;
+  width: 160px;
+  min-width: 160px;
+  word-spacing: -2px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.arrow-down,
+.arrow-up {
+  display: block;
+  width: 2px;
+  height: 10px;
+  background-color: black;
+  margin: 0 5px;
+  position: relative;
+}
+
+.arrow-down::before,
+.arrow-up::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 0;
+  left: -2px;
+  transform-origin: center center;
+  transform: rotate(45deg);
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.arrow-down::before {
+  top: auto;
+  bottom: 0;
+  border: 0;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.arrow-left,
+.arrow-right {
+  display: block;
+  height: 2px;
+  width: 15px;
+  background-color: black;
+  margin: 0 5px;
+  position: relative;
+}
+
+.arrow-left::before,
+.arrow-right::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: -2px;
+  left: -1px;
+  transform-origin: center center;
+  transform: rotate(-45deg);
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.arrow-right::before {
+  bottom: 0;
+  border: 0;
+  right: 0;
+  left: auto;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.mouse {
+  display: block;
+  border: 1px solid black;
+  height: 18px;
+  width: 12px;
+  margin: 0 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.mouse span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 60%;
+  background-color: black;
+  border-top-left-radius: 4px;
+}
+.mouse span::before {
+  content: '';
+  width: 200%;
+  height: 1px;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  position: absolute;
+}
+.mouse::before {
+  content: '';
+  width: 7px;
+  height: 10px;
+  top: -5px;
+  left: -5px;
+  z-index: 2;
+  position: absolute;
+  border-top-left-radius: 8px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}
+.mouse::after {
+  content: '';
+  width: 5px;
+  height: 7px;
+  top: -3px;
+  left: -3px;
+  z-index: 2;
+  position: absolute;
+  border-top-left-radius: 8px;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+}

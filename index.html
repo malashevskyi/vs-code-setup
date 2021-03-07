@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VS Code Shortcuts</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <h1 class="title">VS Code Shortcuts cheatsheet <span>(including extensions shortcuts)</span></h1>
+    <h2 class=title-sign>(Windows / Ubuntu)</h2>
+    <div class="container">
+      <p>Shortcuts with green line modified (is not default) on Windows, Linux or both.</p>
+      <p>Additional information about CapsLock and some setup see on <a href="https://github.com/malashevskyi" target="_blank">github</a></p>
+
+      <ul class="list">
+        <li class="list--item">
+          <h2 class="subtitle">General</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + P, F1</strong>
+              <h4 class="command-title">Show command palette</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + N</strong>
+              <h4 class="command-title">New window</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + R</strong>
+              <h4 class="command-title">Reload window</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 1</strong>
+              <h4 class="command-title">runTask | npm start (required tasks.json)</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 2</strong>
+              <h4 class="command-title">runTask | npm dev (required tasks.json)</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 3</strong>
+              <h4 class="command-title">runTask | npm build (required tasks.json)</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 7</strong>
+              <h4 class="command-title">Open settings</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 8</strong>
+              <h4 class="command-title">Open keyboard shortcuts</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 9</strong>
+              <h4 class="command-title">Open workspace in new window</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Alt + 0</strong>
+              <h4 class="command-title">Open workspace</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Basic editing</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + X</strong>
+              <h4 class="command-title">Cut line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + C</strong>
+              <h4 class="command-title">Copy line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">
+                Alt + <i class="arrow-down"></i> / <i class="arrow-up"></i>
+              </strong>
+              <h4 class="command-title">
+                Move line <i class="arrow-down"></i> / <i class="arrow-up"></i>
+              </h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Shift + Alt + D</strong>
+              <h4 class="command-title">Delete line</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + J</strong>
+              <h4 class="command-title">Join lines</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Enter</strong>
+              <h4 class="command-title">Insert line below</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + Enter</strong>
+              <h4 class="command-title">Insert line above</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock + A</strong>
+              <h4 class="command-title">Go to bracket</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + ]</strong>
+              <h4 class="command-title">Indent line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + Tab, Ctrl + [</strong>
+              <h4 class="command-title">Outdent line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Home / End</strong>
+              <h4 class="command-title">Go to beginning / end of line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Home / End</strong>
+              <h4 class="command-title">Go to beginning / end of file</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + [ / ]</strong>
+              <h4 class="command-title">Fold / unfold region</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + <i class="arrow-left"></i></strong>
+              <h4 class="command-title">Fold all (in sidebar)</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + /</strong>
+              <h4 class="command-title">Toggle line comment</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Alt + Z</strong>
+              <h4 class="command-title">Toggle word wrap</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Rich languages editing</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + space</strong>
+              <h4 class="command-title">Trigger suggestion</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + I</strong>
+              <h4 class="command-title">Format document</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">F2</strong>
+              <h4 class="command-title">Rename file</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + F12</strong>
+              <h4 class="command-title">Show references / definition</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + <i class="mouse"><span></span></i></strong>
+              <h4 class="command-title">Go to definition</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Multi-cursor and selection</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + D</strong>
+              <h4 class="command-title">Add selection to next find match</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Alt + <i class="mouse"><span></span></i></strong>
+              <h4 class="command-title">Insert cursor</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + <i class="arrow-down"></i> / <i class="arrow-up"></i></strong>
+              <h4 class="command-title">Insert cursor below / above</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Shift + Alt + <i class="arrow-down"></i> / <i class="arrow-up"></i></strong>
+              <h4 class="command-title">Insert cursor by 7 lines below / above</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + U</strong>
+              <h4 class="command-title">Undo last cursor operation</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + I</strong>
+              <h4 class="command-title">Insert cursor at end of each line selected</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + L</strong>
+              <h4 class="command-title">Select current line / lines</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + F2</strong>
+              <h4 class="command-title">Select all occurrences of current selection</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + Alt + <i class="arrow-right"></i></strong>
+              <h4 class="command-title">Expand selection</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + Alt + <i class="arrow-left"></i></strong>
+              <h4 class="command-title">Shrink selection</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + Alt + drag mouse</strong>
+              <h4 class="command-title">Box selection</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Display / Editor management</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">F11</strong>
+              <h4 class="command-title">Toggle fullscreen</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + Alt + 0</strong>
+              <h4 class="command-title">Toggle editor layout (vertical / horizontal)</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + + / -</strong>
+              <h4 class="command-title">Zoom</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + B</strong>
+              <h4 class="command-title">Toggle sidebar visibility</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + E</strong>
+              <h4 class="command-title">Toggle focus on explorer</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + X</strong>
+              <h4 class="command-title">Focus on extensions</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + H</strong>
+              <h4 class="command-title">Replace in files</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + C</strong>
+              <h4 class="command-title">Open terminal from editor</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + V</strong>
+              <h4 class="command-title">Open markdown preview to the side</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + \</strong>
+              <h4 class="command-title">Split editor vertical</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + \</strong>
+              <h4 class="command-title">Split editor horizontal</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + 1 / 2 / 3</strong>
+              <h4 class="command-title">Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3 <sup>nd</sup>&nbsp;editor group</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + PageDown</strong>
+              <h4 class="command-title">Move editor left</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + PageUp</strong>
+              <h4 class="command-title">Move editor right</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + NumPad8</strong>
+              <h4 class="command-title">Increase editor height</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + NumPad2</strong>
+              <h4 class="command-title">Decrease editor height</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + NumPad6</strong>
+              <h4 class="command-title">Increase editor width</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + NumPad4</strong>
+              <h4 class="command-title">Decrease editor width</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Search and replace</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + F</strong>
+              <h4 class="command-title">Search</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + H</strong>
+              <h4 class="command-title">Replace in the file</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">F3 / Shift + F3</strong>
+              <h4 class="command-title">Find next / previous</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Alt + Enter</strong>
+              <h4 class="command-title">Confirm replace all</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Navigation</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + W</strong>
+              <h4 class="command-title">Close editor / file</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + P</strong>
+              <h4 class="command-title">Quick open, go to file</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + G</strong>
+              <h4 class="command-title">Go to line</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">F8</strong>
+              <h4 class="command-title">Go to next error or warning</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">File management</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">A</strong>
+              <h4 class="command-title">Create new file (in sidebar)</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Shift + A</strong>
+              <h4 class="command-title">Create new folder (in sidebar)</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + N</strong>
+              <h4 class="command-title">New file (Untitled)</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + S</strong>
+              <h4 class="command-title">Save</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + S</strong>
+              <h4 class="command-title">Save as ...</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + <i class="arrow-left"></i></strong>
+              <h4 class="command-title">Fold all folders in sidebar (if focused)</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + T</strong>
+              <h4 class="command-title">Reopen closed editor</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Tab</strong>
+              <h4 class="command-title">Next editor</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + Tab</strong>
+              <h4 class="command-title">Prev editor</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">(hold)Ctrl + Tab</strong>
+              <h4 class="command-title">Opened files, navigation with arrows</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Debug</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">F9</strong>
+              <h4 class="command-title">Toggle breakpoint</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">F5</strong>
+              <h4 class="command-title">Start / continue</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Shift + F5</strong>
+              <h4 class="command-title">Stop</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Integrated terminal</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + `</strong>
+              <h4 class="command-title">Show integrated terminal</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + C</strong>
+              <h4 class="command-title">Copy selection</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + V</strong>
+              <h4 class="command-title">Paste</h4>
+            </li>
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Shift + 5</strong>
+              <h4 class="command-title">Split terminal</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + 4</strong>
+              <h4 class="command-title">Kill active terminal</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Alt + <i class="arrow-up"></i></strong>
+              <h4 class="command-title">Focus next terminal in pane</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Alt + <i class="arrow-down"></i></strong>
+              <h4 class="command-title">Focus previous terminal in pane</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; <i class="arrow-left"></i></strong>
+              <h4 class="command-title">Increase panel (terminal) width</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; <i class="arrow-right"></i></strong>
+              <h4 class="command-title">Decrease panel (terminal) width</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; <i class="arrow-up"></i></strong>
+              <h4 class="command-title">Increase panel (terminal) height</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; <i class="arrow-down"></i></strong>
+              <h4 class="command-title">Decrease panel (terminal) height</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; PageDown</strong>
+              <h4 class="command-title">Move panel (terminal) to bottom</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock &nbsp; PageUp</strong>
+              <h4 class="command-title">Move panel (terminal) to right</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">These useful commands I launch from command palette, I use them not often and don't want to remember shortcuts.</h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">Fold All Blocks Comments</li>
+          </ul>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">Fold All</li>
+          </ul>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">Unfold All</li>
+          </ul>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">Close all editors</li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + Shift + /</strong>
+              <h4 class="command-title">Comment line / block</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + B &nbsp; Ctrl + T</strong>
+              <h4 class="command-title">Toggle</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + B &nbsp; Ctrl + L</strong>
+              <h4 class="command-title">Toggle label</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + <i class="arrow-up"></i></strong>
+              <h4 class="command-title">Jump to previous</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + <i class="arrow-down"></i></strong>
+              <h4 class="command-title">Jump to next</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + B &nbsp; Ctrl + <i class="arrow-up"></i></strong>
+              <h4 class="command-title">List</h4>
+            </li>
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">Ctrl + B &nbsp; Ctrl + <i class="arrow-down"></i></strong>
+              <h4 class="command-title">List from all files</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Ctrl + Alt + P</strong>
+              <h4 class="command-title">Copy workspace path</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock + D</strong>
+              <h4 class="command-title">Duplicate file in sidebar</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item" tp="own">
+              <strong class="command">CapsLock + R</strong>
+              <h4 class="command-title">Convert hex to rgba</h4>
+            </li>
+          </ul>
+        </li>
+        <li class="list--item">
+          <h2 class="subtitle">Extension: <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a></h2>
+          <ul class="shortcuts">
+            <li class="shortcuts--item">
+              <strong class="command">Alt + W</strong>
+              <h4 class="command-title">Wrap selected tag</h4>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
