@@ -329,3 +329,50 @@ p {
 }
 
 
+@media(max-width: 1600px) {
+  .list {
+    column-count: 2;
+  }
+  .container {
+    width: 1050px;
+  }
+}
+@media(max-width: 1100px) {
+  .list {
+    column-count: 1;
+  }
+  .container {
+    width: 500px;
+  }
+  .can-copy::before {
+    display: none;
+  }
+}
+@media(max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+  .title, .subtitle {
+    font-size: 18px;
+  }
+  .title-sign, body {
+    font-size: 12px;
+  }
+  .command-title {
+    font-size: 13px;
+    padding-left: 0;
+  }
+  .command-title::before {
+    display: none;
+  }
+  .list--item {
+    width: 100%;
+  }
+}
+@media(max-width: 400px) {
+  .command {
+    width: 100px;
+    min-width: 100px;
+    white-space: normal;
+  }
+}
