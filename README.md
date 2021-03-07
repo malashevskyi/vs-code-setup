@@ -1,9 +1,14 @@
 # vs-code-setup
+my vs-code setup, extentions, shortcuts cheatsheet
 
 ## Contents
-- [Setup](#setup)
 - [VS Code shortcuts](#vs-code-shortcuts)
+- [Setup](#setup)
 - [Extensions](#extensions)
+
+## VS Code shortcuts
+  - see [`my cheatsheet`](https://vs-code-cheatsheet.web.app/) - all shortcuts I use <br>
+  ![vs code shortcuts](assets/images/og.jpg)
 
 ## Setup
 - I use `vs code insiders` instead of `vs code`, but I have both of them. To open file with insider use:
@@ -11,7 +16,7 @@
   - create alias to open files with `c file-name`
     ```js
     // Ubuntu/Window
-    // inside ~/.bashrc
+    // inside ~/.bashrc or ~/.zshrc
     alias c='code-insiders'
     ```
 - I disabled `Caps Lock` key to get some additional keyboard shortcuts for VS Code and Chrome extensions
@@ -20,7 +25,7 @@
     - I checked `Caps Lock is disabled`, it still recognize the key in `vs code shortcuts` as `Caps Lock` but without any effect.
     ![tweak settings screenshot](screenshots/9.png)
     <br><br>
-    - For windows I installed AutoHotkey [`website`](https://www.autohotkey.com/) [`video installation`](https://www.youtube.com/watch?v=lxLNtBYjkjU)
+    - For Windows I installed AutoHotkey [`website`](https://www.autohotkey.com/) [`video installation`](https://www.youtube.com/watch?v=lxLNtBYjkjU)
     - Here my config for AutoHotkey:
       ```ahk
       #NoEnv  ; Re`ommended for performance and compatibility with future AutoHotkey releases.
@@ -82,26 +87,22 @@
       "when": "editorTextFocus"
     },
   ```
-
-## VS Code shortcuts
-  - see [`my cheatsheet`]() - all shortcuts I use 
-    
  
 ## Extensions
   - [`copy-workspace-path`](https://github.com/malashevskyi/copy-workspace-path-vs-code-extension)
   - [`One Dark Pro`](https://github.com/Binaryify/OneDark-Pro) - theme
-  - [`Shortcut Menu Bar`](https://github.com/GorvGoyl/Shortcut-Menu-Bar-VSCode-Extension) - additional icons
+  - [`Shortcut Menu Bar`](https://github.com/GorvGoyl/Shortcut-Menu-Bar-VSCode-Extension) - additional icons <br>
   ![Shortcut Menu Bar Screenshot](screenshots/1.png)
   - [`Auto Rename Tag`](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
-  - [`Better Comments`](https://github.com/aaron-bond/better-comments)
+  - [`Better Comments`](https://github.com/aaron-bond/better-comments)<br>
   ![Better Comments](screenshots/2.png)
   - [`Bookmarks`](https://github.com/alefragnani/vscode-bookmarks) - It helps you to navigate in your code, moving between important positions easily and quickly.
-  - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)
+  - [`Bracket Pair Colorizer 2`](https://github.com/CoenraadS/Bracket-Pair-Colorizer-2)<br>
    ![Bracket Pair Colorizer 2](screenshots/3.png)<br>
   - [`Code Spell Checker`](https://github.com/streetsidesoftware/vscode-spell-checker)
-  - [`Color Info`](https://github.com/mattbierner/vscode-color-info)
+  - [`Color Info`](https://github.com/mattbierner/vscode-color-info)<br>
   ![Color Info](screenshots/5.png)<br>
-  - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)
+  - [`Comment tagged templates`](https://github.com/mjbvz/vscode-comment-tagged-templates)<br>
   ![Comment tagged templates](screenshots/4.png)<br>
   - [`Clang-Format`](https://github.com/xaverh/vscode-clang-format-provider)
   - [`ES7 React/Redux/GraphQL/React-Native snippets`](https://github.com/dsznajder/vscode-es7-javascript-react-snippets)
@@ -113,7 +114,7 @@
   - [`hex-to-rgba`](https://github.com/DakshMiglani/VSCode-Hex-To-RGBA)
   - [`htmltagwrap`](https://github.com/bgashler1/vscode-htmltagwrap)
   - [`Image preview`](https://github.com/kisstkondoros/gutter-preview)
-  - [`Import cost`](https://github.com/wix/import-cost)
+  - [`Import cost`](https://github.com/wix/import-cost)<br>
   ![Comment tagged templates](screenshots/5.png)<br>
   - [`Sass`](https://github.com/TheRealSyler/vscode-sass-indented)
   - [`Markdown Preview Enhanced`](https://github.com/shd101wyy/vscode-markdown-preview-enhanced)
@@ -135,7 +136,7 @@
   - [`Shader languages support for VS Code`](https://github.com/stef-levesque/vscode-shader)
   - [`Simple icons`](https://github.com/LaurentTreguier/vscode-simple-icons)
   - [`Tabnine Autocomplete AI: JavaScript, Python, TypeScript, PHP, Go, Java, Ruby, C/C++, HTML/CSS, C#, Rust, SQL, Bash, Kotlin, React`](https://github.com/codota/tabnine-vscode)
-  - [`vscode-faker`](https://github.com/deerawan/vscode-faker)
+  - [`vscode-faker`](https://github.com/deerawan/vscode-faker)<br>
   ![Comment tagged templates](screenshots/6.png)<br>
   - [`vscode-styled-components`](https://github.com/styled-components/vscode-styled-components)
   - [`DotENV`](https://github.com/mikestead/vscode-dotenv)
