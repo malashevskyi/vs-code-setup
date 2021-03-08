@@ -1,14 +1,15 @@
 # vs-code-setup
-my vs-code setup, extentions, shortcuts cheatsheet
+my vs-code setup, extentions, shortcuts cheatsheet, vs code features
 
 ## Contents
 - [VS Code shortcuts](#vs-code-shortcuts)
 - [Setup](#setup)
+- [Features](#features)
 - [Extensions](#extensions)
 
 ## VS Code shortcuts
   - see [`my cheatsheet`](https://vs-code-cheatsheet.web.app/) - all shortcuts I use <br>
-  ![vs code shortcuts](assets/images/og.jpg)
+  <!-- ![vs code shortcuts](assets/images/og.jpg) -->
 
 ## Setup
 - I use `vs code insiders` instead of `vs code`, but I have both of them. To open file with insider use:
@@ -87,6 +88,11 @@ my vs-code setup, extentions, shortcuts cheatsheet
       "when": "editorTextFocus"
     },
   ```
+
+## Features
+  - Refactor (`Ctrl + Shift + R`)
+    - remove / add braces (return)
+    ![remove / add braces gif.gif](gifs/1.gif)
  
 ## Extensions
   - [`copy-workspace-path`](https://github.com/malashevskyi/copy-workspace-path-vs-code-extension)
