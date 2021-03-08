@@ -233,14 +233,6 @@
               <strong class="command">Ctrl + Shift + Enter</strong>
               <h4 class="command-title">Insert line above</h4>
             </li>
-            <li
-              class="shortcuts--item"
-              data-id="editor.action.jumpToBracket"
-              tp="own"
-            >
-              <strong class="command">CapsLock + A</strong>
-              <h4 class="command-title">Go to bracket</h4>
-            </li>
             <li class="shortcuts--item" data-id="editor.action.indentLines">
               <strong class="command">Ctrl + ]</strong>
               <h4 class="command-title">Indent line</h4>
@@ -248,14 +240,6 @@
             <li class="shortcuts--item" data-id="editor.action.outdentLines">
               <strong class="command">Shift + Tab, Ctrl + [</strong>
               <h4 class="command-title">Outdent line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
-              <strong class="command">Home / End</strong>
-              <h4 class="command-title">Go to beginning / end of line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
-              <strong class="command">Ctrl + Home / End</strong>
-              <h4 class="command-title">Go to beginning / end of file</h4>
             </li>
             <li class="shortcuts--item" data-id="editor.fold, editor.unfold">
               <strong class="command">Ctrl + Shift + [ / ]</strong>
@@ -472,7 +456,7 @@
               <strong class="command">Ctrl + Shift + C</strong>
               <h4 class="command-title">Open terminal from editor</h4>
             </li>
-            <li class="shortcuts--item" data-id="markdown.showPreview" tp="own">
+            <li class="shortcuts--item" data-id="markdown-preview-enhanced.openPreviewToTheSide" tp="own">
               <strong class="command">Ctrl + Shift + V</strong>
               <h4 class="command-title">Open markdown preview to the side</h4>
             </li>
@@ -601,6 +585,30 @@
             <li class="shortcuts--item" data-id="workbench.action.navigateBack">
               <strong class="command">Ctrl + Alt + -</strong>
               <h4 class="command-title">Go back (cursor)</h4>
+            </li>
+            <li
+              class="shortcuts--item"
+              data-id="editor.action.jumpToBracket"
+              tp="own"
+            >
+              <strong class="command">CapsLock + A</strong>
+              <h4 class="command-title">Go to bracket</h4>
+            </li>
+            <li
+              class="shortcuts--item"
+              data-id="editor.emmet.action.matchTag"
+              tp="own"
+            >
+              <strong class="command">CapsLock + S</strong>
+              <h4 class="command-title">Emmet: go to matching pair</h4>
+            </li>
+            <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
+              <strong class="command">Home / End</strong>
+              <h4 class="command-title">Go to beginning / end of line</h4>
+            </li>
+            <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
+              <strong class="command">Ctrl + Home / End</strong>
+              <h4 class="command-title">Go to beginning / end of file</h4>
             </li>
           </ul>
         </li>
@@ -837,6 +845,12 @@
             </li>
             <li
               class="shortcuts--item"
+              data-id="workbench.action.toggleZenMode"
+            >
+              <h4 class="command-title">View: toggle zen mode</h4>
+            </li>
+            <li
+              class="shortcuts--item"
               data-id="workbench.files.action.compareWithSaved"
             >
               <h4 class="command-title">
@@ -883,6 +897,15 @@
               <h4 class="command-title">
                 ES7 snippet search&nbsp;<a
                   href="https://github.com/dsznajder/vscode-es7-javascript-react-snippets"
+                  target="_blank"
+                  >extension</a
+                >
+              </h4>
+            </li>
+            <li class="shortcuts--item" data-id="gitlens.toggleFileBlame">
+              <h4 class="command-title">
+                GitLens: Toggle file blame&nbsp;<a
+                  href="https://github.com/eamodio/vscode-gitlens"
                   target="_blank"
                   >extension</a
                 >
@@ -1043,4 +1066,6 @@
       </ul>
     </div>
   </body>
+
+  <script src="assets/script.js"></script>
 </html>
