@@ -1,4 +1,4 @@
-# vs-code-setup
+# vs-code-setup [website](https://vs-code-cheatsheet.web.app/)
 my vs-code setup, extentions, shortcuts cheatsheet, vs code features
 
 ## Contents
@@ -149,6 +149,7 @@ my vs-code setup, extentions, shortcuts cheatsheet, vs code features
   - [`Highlight Matching Tag`](https://github.com/vincaslt/vscode-highlight-matching-tag)
   - [`Log File Highlighter`](https://github.com/emilast/vscode-logfile-highlighter)
   - [`vscode-live-server`](https://github.com/ritwickdey/vscode-live-server)
+  - [`Open In Default Browser`](https://github.com/peakchen90/vscode-open-in-default-browser)
 
 
     
