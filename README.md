@@ -8,7 +8,7 @@ my vs-code setup, extentions, shortcuts cheatsheet, vs code features
 - [Extensions](#extensions)
 
 ## VS Code shortcuts
-  - see [`my cheatsheet`](https://vs-code-cheatsheet.web.app/) - all shortcuts I use <br>
+  - see [`my cheatsheet`](https://vs-code-cheatsheet.web.app/) - more than one hundred keyboard shortcuts plus additional commands<br>
   <!-- ![vs code shortcuts](assets/images/og.jpg) -->
 
 ## Setup
