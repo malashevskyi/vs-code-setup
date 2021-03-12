@@ -107,7 +107,7 @@ kbd {
   position: absolute;
   top: 2px;
 }
-.shortcuts--item[tp]::before {
+.shortcuts--item[data-tp]::before {
   background-color: #028cd0;
 }
 

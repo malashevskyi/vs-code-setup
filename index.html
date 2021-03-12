@@ -101,7 +101,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton01Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd></strong
@@ -113,7 +113,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton02Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd></strong
@@ -125,7 +125,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton03Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd></strong
@@ -137,7 +137,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton05Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd></strong
@@ -147,7 +147,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton06Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>6</kbd></strong
@@ -163,7 +163,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton07Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>7</kbd></strong
@@ -173,7 +173,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton08Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd></strong
@@ -183,7 +183,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton09Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>9</kbd></strong
@@ -193,7 +193,7 @@
             <li
               class="shortcuts--item"
               data-id="ShortcutMenuBar.userButton10Command"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong
@@ -231,7 +231,7 @@
             <li
               class="shortcuts--item"
               data-id="editor.action.deleteLines"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd></strong
@@ -241,7 +241,7 @@
             <li
               class="shortcuts--item"
               data-id="editor.action.joinLines"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>J</kbd></strong>
               <h4 class="command-title">Join lines</h4>
@@ -267,7 +267,8 @@
             </li>
             <li class="shortcuts--item" data-id="editor.action.outdentLines">
               <strong class="command"
-                ><kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Ctrl</kbd> + <kbd>[</kbd></strong
+                ><kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Ctrl</kbd> +
+                <kbd>[</kbd></strong
               >
               <h4 class="command-title">Outdent line</h4>
             </li>
@@ -318,7 +319,7 @@
             <li
               class="shortcuts--item"
               data-id="editor.action.formatDocument"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></strong
@@ -338,7 +339,8 @@
               data-id="editor.action.revealDefinition"
             >
               <strong class="command"
-                ><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
+                ><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong
+              >
               <h4 class="command-title">Go to definition</h4>
             </li>
           </ul>
@@ -355,13 +357,14 @@
             </li>
             <li class="shortcuts--item" data-id="-----">
               <strong class="command"
-                ><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong>
+                ><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong
+              >
               <h4 class="command-title">Insert cursor</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&downarrow;</kbd> /
@@ -372,7 +375,7 @@
             <li
               class="shortcuts--item"
               data-id="cursorMove (custom shortcut, see github)"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> /
@@ -439,7 +442,8 @@
             </li>
             <li class="shortcuts--item" data-id="------">
               <strong class="command"
-                ><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>drag mouse</kbd></strong
+                ><kbd>Shift</kbd> + <kbd>Alt</kbd> +
+                <kbd>drag mouse</kbd></strong
               >
               <h4 class="command-title">Box selection</h4>
             </li>
@@ -474,15 +478,19 @@
               class="shortcuts--item"
               data-id="workbench.action.zoomIn, workbench.action.zoomOut"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong
+              >
               <h4 class="command-title">Zoom</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="workbench.action.toggleSidebarVisibility"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>B</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>B</kbd></strong
+              >
               <h4 class="command-title">Toggle sidebar visibility</h4>
             </li>
             <li class="shortcuts--item" data-id="workbench.view.explorer">
@@ -518,7 +526,7 @@
             <li
               class="shortcuts--item"
               data-id="markdown-preview-enhanced.openPreviewToTheSide"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong
@@ -532,7 +540,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.splitEditorOrthogonal"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\</kbd></strong
@@ -543,7 +551,10 @@
               class="shortcuts--item"
               data-id="workbench.action.focusFirstEditorGroup, workbench.action.focusSecondEditorGroup ..."
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> /
+                <kbd>3</kbd></strong
+              >
               <h4 class="command-title">
                 Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3
                 <sup>nd</sup>&nbsp;editor group
@@ -554,7 +565,8 @@
               data-id="workbench.action.moveEditorLeftInGroup"
             >
               <strong class="command"
-                ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>PageDown</kbd></strong
+                ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+                <kbd>PageDown</kbd></strong
               >
               <h4 class="command-title">Move editor left</h4>
             </li>
@@ -570,33 +582,41 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.increaseViewHeight"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad8</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>NumPad8</kbd></strong
+              >
               <h4 class="command-title">Increase editor height</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="workbench.action.decreaseViewHeight"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad2</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>NumPad2</kbd></strong
+              >
               <h4 class="command-title">Decrease editor height</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="workbench.action.increaseViewWidth"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad6</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>NumPad6</kbd></strong
+              >
               <h4 class="command-title">Increase editor width</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="workbench.action.decreaseViewWidth"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad4</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>NumPad4</kbd></strong
+              >
               <h4 class="command-title">Decrease editor width</h4>
             </li>
           </ul>
@@ -619,7 +639,9 @@
               class="shortcuts--item"
               data-id="editor.action.nextMatchFindAction, editor.action.previousMatchFindAction"
             >
-              <strong class="command"><kbd>F3</kbd> / <kbd>Shift</kbd> + <kbd>F3</kbd></strong>
+              <strong class="command"
+                ><kbd>F3</kbd> / <kbd>Shift</kbd> + <kbd>F3</kbd></strong
+              >
               <h4 class="command-title">Find next / previous</h4>
             </li>
             <li class="shortcuts--item" data-id="editor.action.replaceAll">
@@ -664,17 +686,21 @@
             <li
               class="shortcuts--item"
               data-id="editor.action.jumpToBracket"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>A</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd> + <kbd>A</kbd></strong
+              >
               <h4 class="command-title">Go to bracket</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="editor.emmet.action.matchTag"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>S</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd> + <kbd>S</kbd></strong
+              >
               <h4 class="command-title">Emmet: go to matching pair</h4>
             </li>
             <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
@@ -682,7 +708,9 @@
               <h4 class="command-title">Go to beginning / end of line</h4>
             </li>
             <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></strong>
+              <strong class="command"
+                ><kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></strong
+              >
               <h4 class="command-title">Go to beginning / end of file</h4>
             </li>
           </ul>
@@ -690,35 +718,40 @@
         <li class="list--item">
           <h2 class="subtitle">File management</h2>
           <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="revealFileInOS" tp="own">
+            <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong
               >
               <h4 class="command-title">
                 (Ubuntu) Open containing folder (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar
+                focus)
               </h4>
             </li>
-            <li class="shortcuts--item" data-id="revealFileInOS" tp="own">
+            <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong
               >
               <h4 class="command-title">
                 (Windows) Reveal in file explorer (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar
+                focus)
               </h4>
             </li>
-            <li class="shortcuts--item" data-id="explorer.newFile" tp="own">
+            <li class="shortcuts--item" data-id="explorer.newFile" data-tp="own">
               <strong class="command"><kbd>A</kbd></strong>
               <h4 class="command-title">
-                Create new file (prev: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+                Create new file (prev:
+                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar
+                focus)
               </h4>
             </li>
-            <li class="shortcuts--item" data-id="explorer.newFolder" tp="own">
+            <li class="shortcuts--item" data-id="explorer.newFolder" data-tp="own">
               <strong class="command"><kbd>Shift</kbd> + <kbd>A</kbd></strong>
               <h4 class="command-title">
-                Create new folder (prev: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; -
-                sidebar focus)
+                Create new folder (prev:
+                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; - sidebar
+                focus)
               </h4>
             </li>
             <li
@@ -744,7 +777,8 @@
               >
               <h4 class="command-title">
                 Fold all folders in sidebar (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar
+                focus)
               </h4>
             </li>
             <li
@@ -776,7 +810,9 @@
               class="shortcuts--item"
               data-id="workbench.action.quickOpenNavigateNextInEditorPicker"
             >
-              <strong class="command"><kbd>(hold) Ctrl</kbd> + <kbd>Tab</kbd></strong>
+              <strong class="command"
+                ><kbd>(hold) Ctrl</kbd> + <kbd>Tab</kbd></strong
+              >
               <h4 class="command-title">
                 Opened files, navigation with arrows
               </h4>
@@ -850,7 +886,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.kill"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd></strong
@@ -860,7 +896,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.focusPreviousPane"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Alt</kbd> + <kbd>&downarrow;</kbd></strong
@@ -870,7 +906,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.focusNextPane"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Alt</kbd> + <kbd>&uparrow;</kbd></strong
@@ -880,7 +916,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.resizePaneLeft"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&leftarrow;</kbd></strong
@@ -890,7 +926,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.resizePaneRight"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&rightarrow;</kbd></strong
@@ -900,7 +936,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.resizePaneUp"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&uparrow;</kbd></strong
@@ -910,7 +946,7 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.terminal.resizePaneDown"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&downarrow;</kbd></strong
@@ -920,17 +956,21 @@
             <li
               class="shortcuts--item"
               data-id="workbench.action.positionPanelBottom"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageDown</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageDown</kbd></strong
+              >
               <h4 class="command-title">Move panel (terminal) to bottom</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="workbench.action.positionPanelRight"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageUp</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageUp</kbd></strong
+              >
               <h4 class="command-title">Move panel (terminal) to right</h4>
             </li>
           </ul>
@@ -1076,7 +1116,7 @@
             <li
               class="shortcuts--item"
               data-id="extension.nestComments"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>/</kbd></strong
@@ -1096,39 +1136,41 @@
             </a>
           </h2>
           <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="bookmarks.toggle" tp="own">
+            <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
               <strong class="command"
-                ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>T</kbd></strong
+                ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
+                <kbd>T</kbd></strong
               >
               <h4 class="command-title">Toggle</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="bookmarks.toggleLabeled"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
-                ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>L</kbd></strong
+                ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
+                <kbd>L</kbd></strong
               >
               <h4 class="command-title">Toggle label</h4>
             </li>
             <li
               class="shortcuts--item"
               data-id="bookmarks.jumpToPrevious"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong
               >
               <h4 class="command-title">Jump to previous</h4>
             </li>
-            <li class="shortcuts--item" data-id="bookmarks.jumpToNext" tp="own">
+            <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong
               >
               <h4 class="command-title">Jump to next</h4>
             </li>
-            <li class="shortcuts--item" data-id="bookmarks.list" tp="own">
+            <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
                 <kbd>&uparrow;</kbd></strong
@@ -1138,7 +1180,7 @@
             <li
               class="shortcuts--item"
               data-id="bookmarks.listFromAllFiles"
-              tp="own"
+              data-tp="own"
             >
               <strong class="command"
                 ><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
@@ -1181,9 +1223,11 @@
             <li
               class="shortcuts--item"
               data-id="fileutils.duplicateFile"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>D</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd> + <kbd>D</kbd></strong
+              >
               <h4 class="command-title">Duplicate file in sidebar</h4>
             </li>
           </ul>
@@ -1202,9 +1246,11 @@
             <li
               class="shortcuts--item"
               data-id="extension.convertToRGBA"
-              tp="own"
+              data-tp="own"
             >
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>R</kbd></strong>
+              <strong class="command"
+                ><kbd>CapsLock</kbd> + <kbd>R</kbd></strong
+              >
               <h4 class="command-title">Convert hex to rgba</h4>
             </li>
           </ul>
@@ -1228,7 +1274,6 @@
         </li>
       </ul>
     </div>
+    <script src="assets/script.js"></script>
   </body>
-
-  <script src="assets/script.js"></script>
 </html>
