@@ -64,7 +64,6 @@ my vs-code setup, extentions, shortcuts cheatsheet, vs code features
   - may help [`Detecting keybinding conflicts`](https://code.visualstudio.com/docs/getstarted/keybindings#_detecting-keybinding-conflicts)
   - also pay attantion on 'when' column.
     ![Shortcut Menu Bar Screenshot](screenshots/8.png)
-- I use the same shortcuts for Windows and Linux with one exception - `CapsLock` and `Insert` (the difference only in naming in keyboard shortcuts, but it the same key - `CapsLock`)
 - move cursor by 7 line up / down (or how much you want)
   ```json
     {
