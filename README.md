@@ -1,5 +1,5 @@
 # vs-code-setup [website](https://vs-code-cheatsheet.web.app/)
-my vs-code setup, extentions, shortcuts cheatsheet, vs code features
+my vs-code setup, extensions, shortcuts cheatsheet, vs code features
 
 ## Contents
 - [VS Code shortcuts](#vs-code-shortcuts)
