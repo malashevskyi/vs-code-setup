@@ -92,6 +92,19 @@ my vs-code setup, extensions, shortcuts cheatsheet, vs code features
   - Refactor (`Ctrl + Shift + R`)
     - remove / add braces (return)
     ![remove / add braces gif.gif](gifs/1.gif)
+  - Create keybindings snippets
+    - F1 => Open Keyboard Shortcuts (JSON)
+    ```javascript
+       {
+          "key": "capslock 1",
+          "command": "editor.action.insertSnippet",
+          "when": "editorTextFocus",
+          "args": {
+            "snippet": "console.log('${1:log}', ${2})"
+          }
+        },
+    ```
+    will output `console.log('log', )`
  
 ## Extensions
   - [`copy-workspace-path`](https://github.com/malashevskyi/copy-workspace-path-vs-code-extension)
