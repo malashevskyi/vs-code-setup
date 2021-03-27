@@ -21,12 +21,15 @@ my vs-code setup, extensions, shortcuts cheatsheet, vs code features
     alias c='code-insiders'
     ```
 - I disabled `Caps Lock` key to get some additional keyboard shortcuts for VS Code and Chrome extensions
-    - For Ubuntu I installed [`Tweak`](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
+    #### For **Ubuntu** I installed [`Tweak`](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-20-04-lts-focal-fossa-linux)
     - To change `Caps Lock` go Tweaks / Keyboard & Mouse / Additional Layout Options / Caps Lock behavior
     - I checked `Caps Lock is disabled`, it still recognize the key in `vs code shortcuts` as `Caps Lock` but without any effect.
     ![tweak settings screenshot](screenshots/9.png)
     <br><br>
-    - For Windows I installed AutoHotkey [`website`](https://www.autohotkey.com/) [`video installation`](https://www.youtube.com/watch?v=lxLNtBYjkjU)
+    #### For **Mint**
+    - settings -> keyboard - layouts - options - Caps Lock behavior -> Caps Lock is disabled
+    <br><br>
+    #### For **Windows** I installed AutoHotkey [`website`](https://www.autohotkey.com/) [`video installation`](https://www.youtube.com/watch?v=lxLNtBYjkjU)
     - Here my config for AutoHotkey:
       ```ahk
       #NoEnv  ; Re`ommended for performance and compatibility with future AutoHotkey releases.
@@ -40,7 +43,7 @@ my vs-code setup, extensions, shortcuts cheatsheet, vs code features
     - I replace `CapsLock` with `Insert` key
     - I use a real button, because when i choose a non-existent button it shows `unknown` in vs code shortcuts and of course, doesn't work.
     <br>
-    - So, I use `CapsLock` in Ubuntu shortcuts and `Insert` in Windows shortcuts
+    So, I use `CapsLock` in linux and `Insert` in Windows
      <br>
     
 - Disable file filtering in sidebar and set **A** and **Shift + A** to create file and create folder
