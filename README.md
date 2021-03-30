@@ -165,6 +165,7 @@ my vs-code setup, extensions, shortcuts cheatsheet, vs code features
   - [`Log File Highlighter`](https://github.com/emilast/vscode-logfile-highlighter)
   - [`vscode-live-server`](https://github.com/ritwickdey/vscode-live-server)
   - [`Open In Default Browser`](https://github.com/peakchen90/vscode-open-in-default-browser)
+  - [`REST Client`](https://github.com/Huachao/vscode-restclient)
 
 
     
