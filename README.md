@@ -166,6 +166,7 @@ my vs-code setup, extensions, shortcuts cheatsheet, vs code features
   - [`vscode-live-server`](https://github.com/ritwickdey/vscode-live-server)
   - [`Open In Default Browser`](https://github.com/peakchen90/vscode-open-in-default-browser)
   - [`REST Client`](https://github.com/Huachao/vscode-restclient)
+  - [`Debugger for Chrome`](https://github.com/Microsoft/vscode-chrome-debug)
 
 
     
