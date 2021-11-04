@@ -1,420 +1,434 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VS Code Shortcuts</title>
 
-    <meta name="keywords" content="VS, Code, keybo1ard, shortcuts, cheatsheet, extensions shortcuts" />
-    <meta name="description" content="VS Code keyboard shortcuts cheat sheet + extensions shortcuts" />
-    <meta property="og:title" content="VS Code Shortcuts" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://vs-code-cheatsheet.web.app/" />
-    <meta property="og:image" content="https://vs-code-cheatsheet.web.app/assets/images/og.jpg" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:site_name" content="VS Code shortcuts" />
-    <meta property="og:description" content="VS Code keyboard shortcuts cheat sheet + extensions shortcuts" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code Shortcuts</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
-    <link rel="stylesheet" href="/assets/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="success" style="opacity: 0"></div>
+  <meta name="keywords" content="VS, Code, keybo1ard, shortcuts, cheatsheet, extensions shortcuts" />
+  <meta name="description" content="VS Code keyboard shortcuts cheat sheet + extensions shortcuts" />
+  <meta property="og:title" content="VS Code Shortcuts" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://vs-code-cheatsheet.web.app/" />
+  <meta property="og:image" content="https://vs-code-cheatsheet.web.app/assets/images/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="VS Code shortcuts" />
+  <meta property="og:description" content="VS Code keyboard shortcuts cheat sheet + extensions shortcuts" />
 
-    <h1 class="title">VS Code Shortcuts cheatsheet <span>(including extensions shortcuts)</span></h1>
-    <h2 class="title-sign">
-      <button class="button-tab is-active">Mac</button>
-      <button class="button-tab">(Windows / Ubuntu)</button>
-    </h2>
-    <div class="container">
-      <p><i class="marker"></i>&nbsp;- default shortcuts</p>
-      <p><i class="marker m"></i>&nbsp;- modified shortcuts</p>
-      <p>Additional information about CapsLock and some setup see on&nbsp;<a href="https://github.com/malashevskyi/vs-code-setup" target="_blank"> github</a></p>
-      <p class="can-copy">To easily find a command in VS Code you can click on a shortcut below to copy its id</p>
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png" />
+  <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+  <link rel="stylesheet" href="/assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
 
-      <ul class="list tab is-active">
-        <li class="list--item">
-          <h2 class="subtitle">General</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="workbench.action.showCommands">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>,&nbsp;<kbd>F1</kbd></strong>
-              <h4 class="command-title">Show command palette</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.newWindow">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></strong>
-              <h4 class="command-title">New window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.reloadWindow">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Reload window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton01Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd></strong>
-              <h4 class="command-title">runTask | npm start (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton02Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd></strong>
-              <h4 class="command-title">runTask | npm dev (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton03Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd></strong>
-              <h4 class="command-title">runTask | npm build (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton05Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd></strong>
-              <h4 class="command-title">Task: run Task</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton06Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>6</kbd></strong>
-              <h4 class="command-title">Open with live server&nbsp;<a href="https://github.com/ritwickdey/vscode-live-server" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton07Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>7</kbd></strong>
-              <h4 class="command-title">Open settings</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton08Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd></strong>
-              <h4 class="command-title">Open keyboard shortcuts</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton09Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>9</kbd></strong>
-              <h4 class="command-title">Open workspace in new window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton10Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Open workspace</h4>
-            </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Editing</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="editor.action.clipboardCutAction">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>X</kbd></strong>
-              <h4 class="command-title">Cut line</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.clipboardCopyAction">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Copy line</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.moveLinesDownAction, editor.action.moveLinesUpAction">
-              <strong class="command"> <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd> </strong>
-              <h4 class="command-title">Move line down / up</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.deleteLines" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Delete line</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.joinLines" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>J</kbd></strong>
-              <h4 class="command-title">Join lines</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.insertLineAfter">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Insert line below</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.insertLineBefore">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Insert line above</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.indentLines">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>]</kbd></strong>
-              <h4 class="command-title">Indent line</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.outdentLines">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Ctrl</kbd> + <kbd>[</kbd></strong>
-              <h4 class="command-title">Outdent line</h4>
-            </li> -->
-            <li class="shortcuts--item" data-id="editor.fold, editor.unfold">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>[</kbd> / <kbd>]</kbd></strong>
-              <h4 class="command-title">Fold / unfold region</h4>
-            </li>
-            <li class="shortcuts--item" data-id="list.collapseAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Fold all (in sidebar)</h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="editor.action.commentLine">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>/</kbd></strong>
-              <h4 class="command-title">Toggle line comment</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.toggleWordWrap">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Toggle word wrap</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.organizeImports">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></strong>
-              <h4 class="command-title">Organize imports</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.refactor">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Refactor (extract)</h4>
-            </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Rich languages editing</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="editor.action.triggerSuggest">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>space</kbd></strong>
-              <h4 class="command-title">Trigger suggestion</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.formatDocument" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></strong>
-              <h4 class="command-title">Format document</h4>
-            </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.rename">
+<body>
+  <div class="success" style="opacity: 0"></div>
+
+  <h1 class="title">VS Code Shortcuts cheatsheet <span>(including extensions shortcuts)</span></h1>
+  <h2 class="title-sign">
+    <button class="button-tab is-active">Mac</button>
+    <button class="button-tab">deprecated (Windows / Ubuntu)</button>
+  </h2>
+  <div class="container">
+    <p><i class="marker"></i>&nbsp;- default shortcuts</p>
+    <p><i class="marker m"></i>&nbsp;- modified shortcuts</p>
+    <p>Additional information about CapsLock and some setup see on&nbsp;<a
+        href="https://github.com/malashevskyi/vs-code-setup" target="_blank"> github</a></p>
+    <p class="can-copy">To easily find a command in VS Code you can click on a shortcut below to copy its id</p>
+
+    <ul class="list tab is-active">
+      <li class="list--item">
+        <h2 class="subtitle">Old...</h2>
+        <ul class="shortcuts">
+
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run start">
+            <h4 class="command-title command-title_full">runTask | npm start (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run dev">
+            <h4 class="command-title command-title_full">runTask | npm dev (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run build">
+            <h4 class="command-title command-title_full">runTask | npm build (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask">
+            <h4 class="command-title">Task: run Task</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspaceInNewWindow">
+            <h4 class="command-title command-title_full">Open workspace in new window</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspace">
+            <h4 class="command-title">Open workspace</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="editor.action.formatDocument">
+            <h4 class="command-title">Format document</h4>
+          </li>
+        </ul>
+      </li>
+
+      <li class="list--item">
+        <h2 class="subtitle">General</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.changeAll">
+            <strong class="command"><kbd>F2</kbd> / <kbd>Cmd</kbd> + <kbd>F2</kbd> </strong>
+            <h4 class="command-title">Change All Occurrences</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.showCommands">
+            <strong class="command"><kbd>F1</kbd></strong>
+            <h4 class="command-title">Show command palette</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.newWindow">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></strong>
+            <h4 class="command-title">New window</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.openSettings">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>,</kbd></strong>
+            <h4 class="command-title">Open settings</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.openGlobalKeybindings">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>K</kbd>, <kbd>Cmd</kbd> + <kbd>S</kbd> </strong>
+            <h4 class="command-title">Open keyboard shortcuts</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Vim extension</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>df / dt</kbd>&nbsp;<kbd>character</kbd></strong>
+            <h4 class="command-title">Delete until the next character</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>g</kbd>&nbsp;<kbd>:</kbd> / <kbd>g</kbd>&nbsp;<kbd>,</kbd></strong>
+            <h4 class="command-title">Move cursor to last changes / return back</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>d</kbd>&nbsp;<kbd>d</kbd></strong>
+            <h4 class="command-title">Delete / Cut line</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>o</kbd></strong>
+            <h4 class="command-title">Insert line below</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertLineBefore">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>o</kbd></strong>
+            <h4 class="command-title">Insert line above</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Editing</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.clipboardCopyAction">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Copy line</h4>
+            <strong class="command">vim: <kbd>y</kbd>&nbsp;<kbd>y</kbd></strong>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.moveLinesDownAction, editor.action.moveLinesUpAction">
+            <strong class="command"> <kbd>Opt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd> </strong>
+            <h4 class="command-title">Move line down / up</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.joinLines">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>J</kbd></strong>
+            <h4 class="command-title">Join lines</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.indentLines">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>]</kbd></strong>
+            <h4 class="command-title">Indent line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.outdentLines">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>[</kbd></strong>
+            <h4 class="command-title">Outdent line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.fold, editor.unfold">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>[</kbd> / <kbd>]</kbd></strong>
+            <h4 class="command-title">Fold / unfold region</h4>
+          </li>
+          <li class="shortcuts--item" data-id="list.collapseAll">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Fold all (in sidebar)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.commentLine">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>/</kbd></strong>
+            <h4 class="command-title">Toggle line comment</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.toggleWordWrap">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>Z</kbd></strong>
+            <h4 class="command-title">Toggle word wrap</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.organizeImports">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></strong>
+            <h4 class="command-title">Organize imports</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.refactor">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></strong>
+            <h4 class="command-title">Refactor (extract)</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Rich languages editing</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.triggerSuggest">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>space</kbd></strong>
+            <h4 class="command-title">Trigger suggestion</h4>
+          </li>
+
+          <!-- <li class="shortcuts--item" data-id="editor.action.rename">
               <strong class="command"><kbd>F2</kbd></strong>
               <h4 class="command-title">Rename file</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.goToReferences">
+          <!-- <li class="shortcuts--item" data-id="editor.action.goToReferences">
               <strong class="command"><kbd>Shift</kbd> + <kbd>F12</kbd></strong>
               <h4 class="command-title">Show references / definition</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.revealDefinition">
+          <!-- <li class="shortcuts--item" data-id="editor.action.revealDefinition">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
               <h4 class="command-title">Go to definition</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Multi-cursor and selection</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item">
-              <strong class="command">vim:<kbd>g</kbd><kbd>:</kbd> / <kbd>g</kbd><kbd>,</kbd></strong>
-              <h4 class="command-title">Move cursor to last changes / return back</h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Multi-cursor and selection</h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>D</kbd></strong>
               <h4 class="command-title">Add selection to next find match</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="-----">
+          <!-- <li class="shortcuts--item" data-id="-----">
               <strong class="command"><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong>
               <h4 class="command-title">Insert cursor</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">Insert cursor below / above</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="cursorMove (custom shortcut, see github)" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="cursorMove (custom shortcut, see github)" data-tp="own">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">Insert cursor by 7 lines below / above</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="cursorUndo">
+          <!-- <li class="shortcuts--item" data-id="cursorUndo">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>U</kbd></strong>
               <h4 class="command-title">Undo last cursor operation</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="undo">
+          <!-- <li class="shortcuts--item" data-id="undo">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Z</kbd></strong>
               <h4 class="command-title">Undo last operation</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="redo">
+          <!-- <li class="shortcuts--item" data-id="redo">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></strong>
               <h4 class="command-title">Redo last operation</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
+          <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></strong>
               <h4 class="command-title">Insert cursor at end of each line selected</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="expandLineSelection">
+          <!-- <li class="shortcuts--item" data-id="expandLineSelection">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
               <h4 class="command-title">Select current line / lines</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.changeAll">
+          <!-- <li class="shortcuts--item" data-id="editor.action.changeAll">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>F2</kbd></strong>
               <h4 class="command-title">Select all occurrences of current selection</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.expand">
+          <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.expand">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&rightarrow;</kbd></strong>
               <h4 class="command-title">Expand selection</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.shrink">
+          <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.shrink">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&leftarrow;</kbd></strong>
               <h4 class="command-title">Shrink selection</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="------">
+          <!-- <li class="shortcuts--item" data-id="------">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>drag mouse</kbd></strong>
               <h4 class="command-title">Box selection</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Display / Editor management</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.toggleFullScreen">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">Toggle fullscreen</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Focus into side bar</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> +<kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Open next editor</h4>
-              <strong class="command">vim: <kbd>g</kbd><kbd>t</kbd></strong>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Open previous editor</h4>
-              <strong class="command">vim:<kbd>g</kbd><kbd>T</kbd></strong>
-            </li>
+        </ul>
+      </li>
 
-            <li class="shortcuts--item" data-id="workbench.action.toggleEditorGroupLayout">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>Cmd</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Toggle editor layout (vertical / horizontal)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.zoomIn, workbench.action.zoomOut">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong>
-              <h4 class="command-title">Zoom</h4>
-            </li>
+      <li class="list--item">
+        <h2 class="subtitle">Display / Editor management</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.toggleFullScreen">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">Toggle fullscreen</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.closeOtherEditors">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>T</kbd></strong>
+            <h4 class="command-title">Close other editors</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>0</kbd></strong>
+            <h4 class="command-title">Focus into side bar</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> +<kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Open next editor</h4>
+            <strong class="command">vim: <kbd>g</kbd><kbd>t</kbd></strong>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Open previous editor</h4>
+            <strong class="command">vim:<kbd>g</kbd><kbd>T</kbd></strong>
+          </li>
 
-            <li class="shortcuts--item" data-id="workbench.action.toggleSidebarVisibility">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>B</kbd></strong>
-              <h4 class="command-title">Toggle sidebar visibility</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.view.explorer">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></strong>
-              <h4 class="command-title">Toggle focus on explorer</h4>
-            </li>
+          <li class="shortcuts--item" data-id="workbench.action.toggleEditorGroupLayout">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>Cmd</kbd> + <kbd>0</kbd></strong>
+            <h4 class="command-title">Toggle editor layout (vertical / horizontal)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.zoomIn, workbench.action.zoomOut">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong>
+            <h4 class="command-title">Zoom</h4>
+          </li>
 
-            <li class="shortcuts--item" data-id="workbench.view.extensions">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd></strong>
-              <h4 class="command-title">Focus on extensions</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.replaceInFiles">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></strong>
-              <h4 class="command-title">Replace in files</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.openNativeConsole">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Open terminal from editor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="markdown-preview-enhanced.openPreviewToTheSide" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
-              <h4 class="command-title">Open markdown preview to the side</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.splitEditor">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>\</kbd></strong>
-              <h4 class="command-title">Split editor vertical</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.splitEditorOrthogonal" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>\</kbd></strong>
-              <h4 class="command-title">Split editor horizontal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusFirstEditorGroup, workbench.action.focusSecondEditorGroup ...">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></strong>
-              <h4 class="command-title">Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3 <sup>nd</sup>&nbsp;editor group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.moveEditorToNextGroup">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Ctrl</kbd> + <kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Move editor to next group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.moveEditorToPreviousGroup">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Move editor to previous group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.increaseViewHeight" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad8</kbd></strong>
-              <h4 class="command-title">Increase editor height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.decreaseViewHeight" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad2</kbd></strong>
-              <h4 class="command-title">Decrease editor height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.increaseViewWidth" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad6</kbd></strong>
-              <h4 class="command-title">Increase editor width</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.decreaseViewWidth" data-tp="own">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad4</kbd></strong>
-              <h4 class="command-title">Decrease editor width</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Search and replace</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="actions.find">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">Search</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.startFindReplaceAction">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>H</kbd></strong>
-              <h4 class="command-title">Replace in the file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.nextMatchFindAction, editor.action.previousMatchFindAction">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>G</kbd> / <kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>G</kbd></strong>
-              <h4 class="command-title">Find next / previous</h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="editor.action.replaceAll">
+          <li class="shortcuts--item" data-id="workbench.action.toggleSidebarVisibility">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>B</kbd></strong>
+            <h4 class="command-title">Toggle sidebar visibility</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.view.explorer">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></strong>
+            <h4 class="command-title">Toggle focus on explorer</h4>
+          </li>
+
+          <li class="shortcuts--item" data-id="workbench.view.extensions">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd></strong>
+            <h4 class="command-title">Focus on extensions</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.replaceInFiles">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></strong>
+            <h4 class="command-title">Replace in files</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.openNativeConsole">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Open terminal from editor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="markdown-preview-enhanced.openPreviewToTheSide" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
+            <h4 class="command-title">Open markdown preview to the side</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.splitEditor">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>\</kbd></strong>
+            <h4 class="command-title">Split editor vertical</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.splitEditorOrthogonal" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Opt</kbd> + <kbd>\</kbd></strong>
+            <h4 class="command-title">Split editor horizontal</h4>
+          </li>
+          <li class="shortcuts--item"
+            data-id="workbench.action.focusFirstEditorGroup, workbench.action.focusSecondEditorGroup ...">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></strong>
+            <h4 class="command-title">Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3 <sup>nd</sup>&nbsp;editor group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.moveEditorToNextGroup">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Ctrl</kbd> + <kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Move editor to next group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.moveEditorToPreviousGroup">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Move editor to previous group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.increaseViewHeight" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad8</kbd></strong>
+            <h4 class="command-title">Increase editor height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.decreaseViewHeight" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad2</kbd></strong>
+            <h4 class="command-title">Decrease editor height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.increaseViewWidth" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad6</kbd></strong>
+            <h4 class="command-title">Increase editor width</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.decreaseViewWidth" data-tp="own">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>NumPad4</kbd></strong>
+            <h4 class="command-title">Decrease editor width</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Search and replace</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="actions.find">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">Search</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.startFindReplaceAction">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>H</kbd></strong>
+            <h4 class="command-title">Replace in the file</h4>
+          </li>
+          <li class="shortcuts--item"
+            data-id="editor.action.nextMatchFindAction, editor.action.previousMatchFindAction">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>G</kbd> / <kbd>Shift</kbd> + <kbd>Cmd</kbd> +
+              <kbd>G</kbd></strong>
+            <h4 class="command-title">Find next / previous</h4>
+          </li>
+          <!-- <li class="shortcuts--item" data-id="editor.action.replaceAll">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
               <h4 class="command-title">Confirm replace all</h4>
             </li> -->
-            <li class="shortcuts--item" data-id="editor.action.selectAllMatches">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Select all matches (in a file after search)</h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="search.action.openInEditor">
+          <li class="shortcuts--item" data-id="editor.action.selectAllMatches">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Select all matches (in a file after search)</h4>
+          </li>
+          <!-- <li class="shortcuts--item" data-id="search.action.openInEditor">
               <strong class="command"><kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
               <h4 class="command-title">Open search result in editor (after global search)</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Navigation</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.closeActiveEditor">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>W</kbd></strong>
-              <h4 class="command-title">Close editor / file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.quickOpen">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>P</kbd></strong>
-              <h4 class="command-title">Quick open, go to file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.gotoLine">
-              <strong class="command">(Vim)&nbsp;<kbd>Number</kbd> + <kbd>GG</kbd></strong>
-              <h4 class="command-title">Go to line</h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="editor.action.marker.nextInFiles">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Navigation</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.closeActiveEditor">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>W</kbd></strong>
+            <h4 class="command-title">Close editor / file</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.quickOpen">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>P</kbd></strong>
+            <h4 class="command-title">Quick open, go to file</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.gotoLine">
+            <strong class="command">(Vim)&nbsp;<kbd>Number</kbd> + <kbd>GG</kbd></strong>
+            <h4 class="command-title">Go to line</h4>
+          </li>
+          <!-- <li class="shortcuts--item" data-id="editor.action.marker.nextInFiles">
               <strong class="command"><kbd>F8</kbd></strong>
               <h4 class="command-title">Go to next error or warning</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="workbench.action.navigateBack">
+          <!-- <li class="shortcuts--item" data-id="workbench.action.navigateBack">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd></strong>
               <h4 class="command-title">Go back (cursor)</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.action.jumpToBracket" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="editor.action.jumpToBracket" data-tp="own">
               <strong class="command"><kbd>CapsLock</kbd> + <kbd>A</kbd></strong>
               <h4 class="command-title">Go to bracket</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="editor.emmet.action.matchTag" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="editor.emmet.action.matchTag" data-tp="own">
               <strong class="command"><kbd>CapsLock</kbd> + <kbd>S</kbd></strong>
               <h4 class="command-title">Emmet: go to matching pair</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
+          <!-- <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
               <strong class="command"><kbd>Home</kbd> / <kbd>End</kbd></strong>
               <h4 class="command-title">Go to beginning / end of line</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
+          <!-- <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></strong>
               <h4 class="command-title">Go to beginning / end of file</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-tp="own" data-id="breadcrumbs.focusAndSelect">
+          <!-- <li class="shortcuts--item" data-tp="own" data-id="breadcrumbs.focusAndSelect">
               <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd></strong>
               <h4 class="command-title">Focus Breadcrumbs</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">File management</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">File management</h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong>
               <h4 class="command-title">
                 (Ubuntu) Open containing folder (prev:
@@ -428,21 +442,21 @@
                 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
               </h4>
             </li> -->
-            <li class="shortcuts--item" data-id="explorer.newFile" data-tp="own">
-              <strong class="command"><kbd>A</kbd></strong>
-              <h4 class="command-title">
-                Create new file (prev:
-                <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="explorer.newFolder" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>A</kbd></strong>
-              <h4 class="command-title">
-                Create new folder (prev:
-                <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; - sidebar focus)
-              </h4>
-            </li>
-            <!-- <li class="shortcuts--item" data-id="workbench.action.files.newUntitledFile">
+          <li class="shortcuts--item" data-id="explorer.newFile" data-tp="own">
+            <strong class="command"><kbd>A</kbd></strong>
+            <h4 class="command-title">
+              Create new file (prev:
+              <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="explorer.newFolder" data-tp="own">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>A</kbd></strong>
+            <h4 class="command-title">
+              Create new folder (prev:
+              <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; - sidebar focus)
+            </h4>
+          </li>
+          <!-- <li class="shortcuts--item" data-id="workbench.action.files.newUntitledFile">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>N</kbd></strong>
               <h4 class="command-title">New file (Untitled)</h4>
             </li>
@@ -477,90 +491,97 @@
               <strong class="command"><kbd>(hold) Ctrl</kbd> + <kbd>Tab</kbd></strong>
               <h4 class="command-title">Opened files, navigation with arrows</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Debug</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="editor.debug.action.toggleBreakpoint">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Debug</h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="editor.debug.action.toggleBreakpoint">
               <strong class="command"><kbd>F9</kbd></strong>
               <h4 class="command-title">Toggle breakpoint</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="workbench.action.debug.start, workbench.action.debug.continue">
+          <!-- <li class="shortcuts--item" data-id="workbench.action.debug.start, workbench.action.debug.continue">
               <strong class="command"><kbd>F5</kbd></strong>
               <h4 class="command-title">Start / continue</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="workbench.action.debug.stop">
+          <!-- <li class="shortcuts--item" data-id="workbench.action.debug.stop">
               <strong class="command"><kbd>Shift</kbd> + <kbd>F5</kbd></strong>
               <h4 class="command-title">Stop</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Integrated terminal</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.terminal.toggleTerminal">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>J</kbd></strong>
-              <h4 class="command-title">Toggle integrated terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="terminal.focus" data-tp="own">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">Focus integrated terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.copySelection">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Copy selection</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.paste">
-              <strong class="command"><kbd>Cmd</kbd> + <kbd>V</kbd></strong>
-              <h4 class="command-title">Paste</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.split">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd></strong>
-              <h4 class="command-title">Split terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.kill" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd></strong>
-              <h4 class="command-title">Kill active terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusPreviousPane">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Focus previous terminal in terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusNextPane">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Focus next terminal in terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusNext" data-tp="own">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">Focus next terminal group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusPrevious" data-tp="own">
-              <strong class="command"><kbd>Opt</kbd> + <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Focus previous terminal group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneLeft">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Increase pane (terminal) width (left)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneRight">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Decrease pane (terminal) width (right)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneUp">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Increase panel (terminal) height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneDown">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">Decrease panel (terminal) height</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item without-command">
-          <h2 class="subtitle">These useful commands I launch from command palette, I use them not often and don't want to remember shortcuts.</h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="workbench.action.openSnippets">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Integrated terminal</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.terminal.toggleTerminal">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>J</kbd></strong>
+            <h4 class="command-title">Toggle integrated terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="terminal.focus" data-tp="own">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">Focus integrated terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.copySelection">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Copy selection</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.paste">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>V</kbd></strong>
+            <h4 class="command-title">Paste</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.split">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd></strong>
+            <h4 class="command-title">Split terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.kill" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd></strong>
+            <h4 class="command-title">Kill active terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusPreviousPane">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Focus previous terminal in terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusNextPane">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Focus next terminal in terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusNext" data-tp="own">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">Focus next terminal group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusPrevious" data-tp="own">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Focus previous terminal group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneLeft">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Increase pane (terminal) width (left)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneRight">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Decrease pane (terminal) width (right)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneUp">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Increase panel (terminal) height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneDown">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Cmd</kbd>&nbsp;&nbsp;<kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">Decrease panel (terminal) height</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item without-command">
+        <h2 class="subtitle">Use from command palette <kbd>F1</kbd></h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.reloadWindow">
+            <h4 class="command-title command-title_full">Reload window</h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.liveServer.goOnline">
+            <h4 class="command-title command-title_full">Open with live server&nbsp;<a
+                href="https://github.com/ritwickdey/vscode-live-server" target="_blank">extension</a></h4>
+          </li>
+          <!-- <li class="shortcuts--item" data-id="workbench.action.openSnippets">
               <h4 class="command-title">Configure user snippets</h4>
             </li>
             <li class="shortcuts--item" data-id="editor.foldAllBlockComments">
@@ -575,7 +596,7 @@
             <li class="shortcuts--item" data-id="openInDefaultBrowser.openInDefaultBrowser">
               <h4 class="command-title">Open in default browser&nbsp;<a target="_blank" href="https://github.com/peakchen90/vscode-open-in-default-browser">extension</a></h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="workbench.action.closeAllEditors">
+          <!-- <li class="shortcuts--item" data-id="workbench.action.closeAllEditors">
               <h4 class="command-title">Close all editors</h4>
             </li>
             <li class="shortcuts--item" data-id="workbench.action.saveWorkspaceAs">
@@ -605,765 +626,786 @@
             <li class="shortcuts--item" data-id="extension.updateSettings">
               <h4 class="command-title">Sync: update/upload settings&nbsp;<a href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="extension.downloadSettings">
+          <!-- <li class="shortcuts--item" data-id="extension.downloadSettings">
               <h4 class="command-title">Sync: download settings&nbsp;<a href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="extension.snippetSearch">
+          <!-- <li class="shortcuts--item" data-id="extension.snippetSearch">
               <h4 class="command-title">ES7 snippet search&nbsp;<a href="https://github.com/dsznajder/vscode-es7-javascript-react-snippets" target="_blank">extension</a></h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="gitlens.toggleFileBlame">
+          <!-- <li class="shortcuts--item" data-id="gitlens.toggleFileBlame">
               <h4 class="command-title">GitLens: Toggle file blame&nbsp;<a href="https://github.com/eamodio/vscode-gitlens" target="_blank">extension</a></h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="extension.nestComments" data-tp="own">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="extension.nestComments" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>/</kbd></strong>
               <h4 class="command-title">Comment line / block</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>T</kbd></strong>
               <h4 class="command-title">Toggle</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
               <h4 class="command-title">Toggle label</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">Jump to previous</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
               <h4 class="command-title">Jump to next</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">List</h4>
             </li> -->
-            <!-- <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
+          <!-- <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
               <h4 class="command-title">List from all files</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="copy-workspace-path.add cd">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path
+          </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="copy-workspace-path.add cd">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></strong>
               <h4 class="command-title">Copy workspace path</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
               <strong class="command"><kbd>CapsLock</kbd> + <kbd>D</kbd></strong>
               <h4 class="command-title">Duplicate file in sidebar</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="extension.convertToRGBA" data-tp="own">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="extension.convertToRGBA" data-tp="own">
               <strong class="command"><kbd>CapsLock</kbd> + <kbd>R</kbd></strong>
               <h4 class="command-title">Convert hex to rgba</h4>
             </li> -->
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a>
-          </h2>
-          <ul class="shortcuts">
-            <!-- <li class="shortcuts--item" data-id="extension.htmlTagWrap">
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a>
+        </h2>
+        <ul class="shortcuts">
+          <!-- <li class="shortcuts--item" data-id="extension.htmlTagWrap">
               <strong class="command"><kbd>Alt</kbd> + <kbd>W</kbd></strong>
               <h4 class="command-title">Wrap selected tag</h4>
             </li> -->
-          </ul>
-        </li>
-      </ul>
-      <ul class="list tab">
-        <li class="list--item">
-          <h2 class="subtitle">General</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.showCommands">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>,&nbsp;<kbd>F1</kbd></strong>
-              <h4 class="command-title">Show command palette</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.newWindow">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></strong>
-              <h4 class="command-title">New window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.reloadWindow">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Reload window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton01Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd></strong>
-              <h4 class="command-title">runTask | npm start (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton02Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd></strong>
-              <h4 class="command-title">runTask | npm dev (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton03Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd></strong>
-              <h4 class="command-title">runTask | npm build (required tasks.json)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton05Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd></strong>
-              <h4 class="command-title">Task: run Task</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton06Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>6</kbd></strong>
-              <h4 class="command-title">Open with live server&nbsp;<a href="https://github.com/ritwickdey/vscode-live-server" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton07Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>7</kbd></strong>
-              <h4 class="command-title">Open settings</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton08Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd></strong>
-              <h4 class="command-title">Open keyboard shortcuts</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton09Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>9</kbd></strong>
-              <h4 class="command-title">Open workspace in new window</h4>
-            </li>
-            <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton10Command" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Open workspace</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Editing</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="editor.action.clipboardCutAction">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>X</kbd></strong>
-              <h4 class="command-title">Cut line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.clipboardCopyAction">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Copy line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.moveLinesDownAction, editor.action.moveLinesUpAction">
-              <strong class="command"> <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd> </strong>
-              <h4 class="command-title">Move line down / up</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.deleteLines" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Delete line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.joinLines" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>J</kbd></strong>
-              <h4 class="command-title">Join lines</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.insertLineAfter">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Insert line below</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.insertLineBefore">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Insert line above</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.indentLines">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>]</kbd></strong>
-              <h4 class="command-title">Indent line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.outdentLines">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Ctrl</kbd> + <kbd>[</kbd></strong>
-              <h4 class="command-title">Outdent line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.fold, editor.unfold">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>[</kbd> / <kbd>]</kbd></strong>
-              <h4 class="command-title">Fold / unfold region</h4>
-            </li>
-            <li class="shortcuts--item" data-id="list.collapseAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Fold all (in sidebar)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.commentLine">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>/</kbd></strong>
-              <h4 class="command-title">Toggle line comment</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.toggleWordWrap">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Toggle word wrap</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.organizeImports">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></strong>
-              <h4 class="command-title">Organize imports</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.refactor">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Refactor (extract)</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Rich languages editing</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="editor.action.triggerSuggest">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>space</kbd></strong>
-              <h4 class="command-title">Trigger suggestion</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.formatDocument" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></strong>
-              <h4 class="command-title">Format document</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.rename">
-              <strong class="command"><kbd>F2</kbd></strong>
-              <h4 class="command-title">Rename file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.goToReferences">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>F12</kbd></strong>
-              <h4 class="command-title">Show references / definition</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.revealDefinition">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
-              <h4 class="command-title">Go to definition</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Multi-cursor and selection</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Add selection to next find match</h4>
-            </li>
-            <li class="shortcuts--item" data-id="-----">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong>
-              <h4 class="command-title">Insert cursor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Insert cursor below / above</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorMove (custom shortcut, see github)" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Insert cursor by 7 lines below / above</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorUndo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>U</kbd></strong>
-              <h4 class="command-title">Undo last cursor operation</h4>
-            </li>
-            <li class="shortcuts--item" data-id="undo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Undo last operation</h4>
-            </li>
-            <li class="shortcuts--item" data-id="redo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Redo last operation</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></strong>
-              <h4 class="command-title">Insert cursor at end of each line selected</h4>
-            </li>
-            <li class="shortcuts--item" data-id="expandLineSelection">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
-              <h4 class="command-title">Select current line / lines</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.changeAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>F2</kbd></strong>
-              <h4 class="command-title">Select all occurrences of current selection</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.smartSelect.expand">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Expand selection</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.smartSelect.shrink">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Shrink selection</h4>
-            </li>
-            <li class="shortcuts--item" data-id="------">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>drag mouse</kbd></strong>
-              <h4 class="command-title">Box selection</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Display / Editor management</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.toggleFullScreen">
-              <strong class="command"><kbd>F11</kbd></strong>
-              <h4 class="command-title">Toggle fullscreen</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Focus into side bar</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.toggleEditorGroupLayout">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong>
-              <h4 class="command-title">Toggle editor layout (vertical / horizontal)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.zoomIn, workbench.action.zoomOut">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong>
-              <h4 class="command-title">Zoom</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.toggleSidebarVisibility" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>B</kbd></strong>
-              <h4 class="command-title">Toggle sidebar visibility</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.view.explorer">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></strong>
-              <h4 class="command-title">Toggle focus on explorer</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.view.extensions">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd></strong>
-              <h4 class="command-title">Focus on extensions</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.replaceInFiles">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></strong>
-              <h4 class="command-title">Replace in files</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.openNativeConsole">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Open terminal from editor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="markdown-preview-enhanced.openPreviewToTheSide" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
-              <h4 class="command-title">Open markdown preview to the side</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.splitEditor">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>\</kbd></strong>
-              <h4 class="command-title">Split editor vertical</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.splitEditorOrthogonal" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\</kbd></strong>
-              <h4 class="command-title">Split editor horizontal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.focusFirstEditorGroup, workbench.action.focusSecondEditorGroup ...">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></strong>
-              <h4 class="command-title">Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3 <sup>nd</sup>&nbsp;editor group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.moveEditorLeftInGroup">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>PageDown</kbd></strong>
-              <h4 class="command-title">Move editor left</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.moveEditorRightInGroup">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>PageUp</kbd></strong>
-              <h4 class="command-title">Move editor right</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.increaseViewHeight" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad8</kbd></strong>
-              <h4 class="command-title">Increase editor height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.decreaseViewHeight" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad2</kbd></strong>
-              <h4 class="command-title">Decrease editor height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.increaseViewWidth" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad6</kbd></strong>
-              <h4 class="command-title">Increase editor width</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.decreaseViewWidth" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad4</kbd></strong>
-              <h4 class="command-title">Decrease editor width</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Search and replace</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="actions.find">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">Search</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.startFindReplaceAction">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>H</kbd></strong>
-              <h4 class="command-title">Replace in the file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.nextMatchFindAction, editor.action.previousMatchFindAction">
-              <strong class="command"><kbd>F3</kbd> / <kbd>Shift</kbd> + <kbd>F3</kbd></strong>
-              <h4 class="command-title">Find next / previous</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.replaceAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Confirm replace all</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.selectAllMatches">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Select all matches (in a file after search)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="search.action.openInEditor">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
-              <h4 class="command-title">Open search result in editor (after global search)</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Navigation</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.closeActiveEditor">
-              <strong class="command"><kbCmdd>Ctrl</kbCmdd> + <kbd>W</kbd></strong>
-              <h4 class="command-title">Close editor / file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.quickOpen">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>P</kbd></strong>
-              <h4 class="command-title">Quick open, go to file</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.gotoLine">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>G</kbd></strong>
-              <h4 class="command-title">Go to line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.marker.nextInFiles">
-              <strong class="command"><kbd>F8</kbd></strong>
-              <h4 class="command-title">Go to next error or warning</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.navigateBack">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd></strong>
-              <h4 class="command-title">Go back (cursor)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.jumpToBracket" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>A</kbd></strong>
-              <h4 class="command-title">Go to bracket</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.emmet.action.matchTag" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>S</kbd></strong>
-              <h4 class="command-title">Emmet: go to matching pair</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
-              <strong class="command"><kbd>Home</kbd> / <kbd>End</kbd></strong>
-              <h4 class="command-title">Go to beginning / end of line</h4>
-            </li>
-            <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></strong>
-              <h4 class="command-title">Go to beginning / end of file</h4>
-            </li>
-            <li class="shortcuts--item" data-tp="own" data-id="breadcrumbs.focusAndSelect">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd></strong>
-              <h4 class="command-title">Focus Breadcrumbs</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">File management</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">
-                (Ubuntu) Open containing folder (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">
-                (Windows) Reveal in file explorer (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="explorer.newFile" data-tp="own">
-              <strong class="command"><kbd>A</kbd></strong>
-              <h4 class="command-title">
-                Create new file (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="explorer.newFolder" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>A</kbd></strong>
-              <h4 class="command-title">
-                Create new folder (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; - sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.files.newUntitledFile">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>N</kbd></strong>
-              <h4 class="command-title">New file (Untitled)</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.files.save">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>S</kbd></strong>
-              <h4 class="command-title">Save</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.files.saveAs">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></strong>
-              <h4 class="command-title">Save as ...</h4>
-            </li>
-            <li class="shortcuts--item" data-id="list.collapseAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">
-                Fold all folders in sidebar (prev:
-                <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
-              </h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.reopenClosedEditor">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></strong>
-              <h4 class="command-title">Reopen closed editor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Tab</kbd></strong>
-              <h4 class="command-title">Next editor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.quickOpenLeastRecentlyUsedEditorInGroup">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd></strong>
-              <h4 class="command-title">Prev editor</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.quickOpenNavigateNextInEditorPicker">
-              <strong class="command"><kbd>(hold) Ctrl</kbd> + <kbd>Tab</kbd></strong>
-              <h4 class="command-title">Opened files, navigation with arrows</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Debug</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="editor.debug.action.toggleBreakpoint">
-              <strong class="command"><kbd>F9</kbd></strong>
-              <h4 class="command-title">Toggle breakpoint</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.debug.start, workbench.action.debug.continue">
-              <strong class="command"><kbd>F5</kbd></strong>
-              <h4 class="command-title">Start / continue</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.debug.stop">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>F5</kbd></strong>
-              <h4 class="command-title">Stop</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">Integrated terminal</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.terminal.toggleTerminal">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>`</kbd></strong>
-              <h4 class="command-title">Toggle integrated terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="terminal.focus">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>F</kbd></strong>
-              <h4 class="command-title">Focus integrated terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.copySelection">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
-              <h4 class="command-title">Copy selection</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.paste">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
-              <h4 class="command-title">Paste</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.split">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd></strong>
-              <h4 class="command-title">Split terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.kill" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd></strong>
-              <h4 class="command-title">Kill active terminal</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusPreviousPane" data-tp="own">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">Focus previous terminal in pane</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.focusNextPane" data-tp="own">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Focus next terminal in pane</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneLeft" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Increase panel (terminal) width</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneRight" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Decrease panel (terminal) width</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneUp" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Increase panel (terminal) height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneDown" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">Decrease panel (terminal) height</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.positionPanelBottom" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageDown</kbd></strong>
-              <h4 class="command-title">Move panel (terminal) to bottom</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.positionPanelRight" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageUp</kbd></strong>
-              <h4 class="command-title">Move panel (terminal) to right</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item without-command">
-          <h2 class="subtitle">These useful commands I launch from command palette, I use them not often and don't want to remember shortcuts.</h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="workbench.action.openSnippets">
-              <h4 class="command-title">Configure user snippets</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.foldAllBlockComments">
-              <h4 class="command-title">Fold All Blocks Comments</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.foldAll">
-              <h4 class="command-title">Fold All</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.unfoldAll">
-              <h4 class="command-title">Unfold All</h4>
-            </li>
-            <li class="shortcuts--item" data-id="openInDefaultBrowser.openInDefaultBrowser">
-              <h4 class="command-title">Open in default browser&nbsp;<a target="_blank" href="https://github.com/peakchen90/vscode-open-in-default-browser">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.closeAllEditors">
-              <h4 class="command-title">Close all editors</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.saveWorkspaceAs">
-              <h4 class="command-title">Save workspace as...</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.closeUnmodifiedEditors">
-              <h4 class="command-title">Close saved editors in group</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.action.toggleZenMode">
-              <h4 class="command-title">View: toggle zen mode</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.transformToUppercase">
-              <h4 class="command-title">Transform to uppercase</h4>
-            </li>
-            <li class="shortcuts--item" data-id="editor.action.transformToLowercase">
-              <h4 class="command-title">Transform to lowercase</h4>
-            </li>
-            <li class="shortcuts--item" data-id="workbench.files.action.compareWithSaved">
-              <h4 class="command-title">File: compare active file with saved</h4>
-            </li>
-            <li class="shortcuts--item" data-id="extension.gist.create">
-              <h4 class="command-title">GIST: create new gist&nbsp;<a href="https://github.com/kenhowardpdx/vscode-gist" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="extension.gist.open">
-              <h4 class="command-title">GIST: open gist&nbsp;<a href="https://github.com/kenhowardpdx/vscode-gist" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="extension.updateSettings">
-              <h4 class="command-title">Sync: update/upload settings&nbsp;<a href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="extension.downloadSettings">
-              <h4 class="command-title">Sync: download settings&nbsp;<a href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="extension.snippetSearch">
-              <h4 class="command-title">ES7 snippet search&nbsp;<a href="https://github.com/dsznajder/vscode-es7-javascript-react-snippets" target="_blank">extension</a></h4>
-            </li>
-            <li class="shortcuts--item" data-id="gitlens.toggleFileBlame">
-              <h4 class="command-title">GitLens: Toggle file blame&nbsp;<a href="https://github.com/eamodio/vscode-gitlens" target="_blank">extension</a></h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="extension.nestComments" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>/</kbd></strong>
-              <h4 class="command-title">Comment line / block</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>T</kbd></strong>
-              <h4 class="command-title">Toggle</h4>
-            </li>
-            <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
-              <h4 class="command-title">Toggle label</h4>
-            </li>
-            <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Jump to previous</h4>
-            </li>
-            <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">Jump to next</h4>
-            </li>
-            <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">List</h4>
-            </li>
-            <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
-              <h4 class="command-title">List from all files</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="copy-workspace-path.add cd">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></strong>
-              <h4 class="command-title">Copy workspace path</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Duplicate file in sidebar</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="extension.convertToRGBA" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Convert hex to rgba</h4>
-            </li>
-          </ul>
-        </li>
-        <li class="list--item">
-          <h2 class="subtitle">
-            Extension:
-            <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a>
-          </h2>
-          <ul class="shortcuts">
-            <li class="shortcuts--item" data-id="extension.htmlTagWrap">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>W</kbd></strong>
-              <h4 class="command-title">Wrap selected tag</h4>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </div>
-    <script src="assets/script.js"></script>
-  </body>
+        </ul>
+      </li>
+    </ul>
+    <ul class="list tab">
+      <li class="list--item">
+        <h2 class="subtitle">General</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.showCommands">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>,&nbsp;<kbd>F1</kbd></strong>
+            <h4 class="command-title">Show command palette</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.newWindow">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></strong>
+            <h4 class="command-title">New window</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.reloadWindow">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>R</kbd></strong>
+            <h4 class="command-title">Reload window</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton01Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd></strong>
+            <h4 class="command-title">runTask | npm start (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton02Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>2</kbd></strong>
+            <h4 class="command-title">runTask | npm dev (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton03Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>3</kbd></strong>
+            <h4 class="command-title">runTask | npm build (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton05Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>5</kbd></strong>
+            <h4 class="command-title">Task: run Task</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton06Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>6</kbd></strong>
+            <h4 class="command-title">Open with live server&nbsp;<a
+                href="https://github.com/ritwickdey/vscode-live-server" target="_blank">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton07Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>7</kbd></strong>
+            <h4 class="command-title">Open settings</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton08Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>8</kbd></strong>
+            <h4 class="command-title">Open keyboard shortcuts</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton09Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>9</kbd></strong>
+            <h4 class="command-title">Open workspace in new window</h4>
+          </li>
+          <li class="shortcuts--item" data-id="ShortcutMenuBar.userButton10Command" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong>
+            <h4 class="command-title">Open workspace</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Editing</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.clipboardCutAction">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>X</kbd></strong>
+            <h4 class="command-title">Cut line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.clipboardCopyAction">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Copy line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.moveLinesDownAction, editor.action.moveLinesUpAction">
+            <strong class="command"> <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd> </strong>
+            <h4 class="command-title">Move line down / up</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.deleteLines" data-tp="own">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd></strong>
+            <h4 class="command-title">Delete line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.joinLines" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>J</kbd></strong>
+            <h4 class="command-title">Join lines</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertLineAfter">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Insert line below</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertLineBefore">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Insert line above</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.indentLines">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>]</kbd></strong>
+            <h4 class="command-title">Indent line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.outdentLines">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Tab</kbd>, <kbd>Ctrl</kbd> + <kbd>[</kbd></strong>
+            <h4 class="command-title">Outdent line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.fold, editor.unfold">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>[</kbd> / <kbd>]</kbd></strong>
+            <h4 class="command-title">Fold / unfold region</h4>
+          </li>
+          <li class="shortcuts--item" data-id="list.collapseAll">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Fold all (in sidebar)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.commentLine">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>/</kbd></strong>
+            <h4 class="command-title">Toggle line comment</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.toggleWordWrap">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>Z</kbd></strong>
+            <h4 class="command-title">Toggle word wrap</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.organizeImports">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></strong>
+            <h4 class="command-title">Organize imports</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.refactor">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd></strong>
+            <h4 class="command-title">Refactor (extract)</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Rich languages editing</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.triggerSuggest">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>space</kbd></strong>
+            <h4 class="command-title">Trigger suggestion</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.formatDocument" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd></strong>
+            <h4 class="command-title">Format document</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.rename">
+            <strong class="command"><kbd>F2</kbd></strong>
+            <h4 class="command-title">Rename file</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.goToReferences">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>F12</kbd></strong>
+            <h4 class="command-title">Show references / definition</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.revealDefinition">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
+            <h4 class="command-title">Go to definition</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Multi-cursor and selection</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>D</kbd></strong>
+            <h4 class="command-title">Add selection to next find match</h4>
+          </li>
+          <li class="shortcuts--item" data-id="-----">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong>
+            <h4 class="command-title">Insert cursor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove"
+            data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&downarrow;</kbd> /
+              <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Insert cursor below / above</h4>
+          </li>
+          <li class="shortcuts--item" data-id="cursorMove (custom shortcut, see github)" data-tp="own">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> /
+              <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Insert cursor by 7 lines below / above</h4>
+          </li>
+          <li class="shortcuts--item" data-id="cursorUndo">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>U</kbd></strong>
+            <h4 class="command-title">Undo last cursor operation</h4>
+          </li>
+          <li class="shortcuts--item" data-id="undo">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Z</kbd></strong>
+            <h4 class="command-title">Undo last operation</h4>
+          </li>
+          <li class="shortcuts--item" data-id="redo">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></strong>
+            <h4 class="command-title">Redo last operation</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></strong>
+            <h4 class="command-title">Insert cursor at end of each line selected</h4>
+          </li>
+          <li class="shortcuts--item" data-id="expandLineSelection">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
+            <h4 class="command-title">Select current line / lines</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.changeAll">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>F2</kbd></strong>
+            <h4 class="command-title">Select all occurrences of current selection</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.smartSelect.expand">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Expand selection</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.smartSelect.shrink">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Shrink selection</h4>
+          </li>
+          <li class="shortcuts--item" data-id="------">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>drag mouse</kbd></strong>
+            <h4 class="command-title">Box selection</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Display / Editor management</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.toggleFullScreen">
+            <strong class="command"><kbd>F11</kbd></strong>
+            <h4 class="command-title">Toggle fullscreen</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.focusSideBar">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>0</kbd></strong>
+            <h4 class="command-title">Focus into side bar</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.toggleEditorGroupLayout">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>0</kbd></strong>
+            <h4 class="command-title">Toggle editor layout (vertical / horizontal)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.zoomIn, workbench.action.zoomOut">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>+</kbd> / <kbd>-</kbd></strong>
+            <h4 class="command-title">Zoom</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.toggleSidebarVisibility" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>B</kbd></strong>
+            <h4 class="command-title">Toggle sidebar visibility</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.view.explorer">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd></strong>
+            <h4 class="command-title">Toggle focus on explorer</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.view.extensions">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd></strong>
+            <h4 class="command-title">Focus on extensions</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.replaceInFiles">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>H</kbd></strong>
+            <h4 class="command-title">Replace in files</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.openNativeConsole">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Open terminal from editor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="markdown-preview-enhanced.openPreviewToTheSide" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
+            <h4 class="command-title">Open markdown preview to the side</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.splitEditor">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>\</kbd></strong>
+            <h4 class="command-title">Split editor vertical</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.splitEditorOrthogonal" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>\</kbd></strong>
+            <h4 class="command-title">Split editor horizontal</h4>
+          </li>
+          <li class="shortcuts--item"
+            data-id="workbench.action.focusFirstEditorGroup, workbench.action.focusSecondEditorGroup ...">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>1</kbd> / <kbd>2</kbd> / <kbd>3</kbd></strong>
+            <h4 class="command-title">Focus into 1<sup>st</sup>, 2 <sup>nd</sup>, 3 <sup>nd</sup>&nbsp;editor group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.moveEditorLeftInGroup">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>PageDown</kbd></strong>
+            <h4 class="command-title">Move editor left</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.moveEditorRightInGroup">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>PageUp</kbd></strong>
+            <h4 class="command-title">Move editor right</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.increaseViewHeight" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad8</kbd></strong>
+            <h4 class="command-title">Increase editor height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.decreaseViewHeight" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad2</kbd></strong>
+            <h4 class="command-title">Decrease editor height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.increaseViewWidth" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad6</kbd></strong>
+            <h4 class="command-title">Increase editor width</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.decreaseViewWidth" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>NumPad4</kbd></strong>
+            <h4 class="command-title">Decrease editor width</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Search and replace</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="actions.find">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">Search</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.startFindReplaceAction">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>H</kbd></strong>
+            <h4 class="command-title">Replace in the file</h4>
+          </li>
+          <li class="shortcuts--item"
+            data-id="editor.action.nextMatchFindAction, editor.action.previousMatchFindAction">
+            <strong class="command"><kbd>F3</kbd> / <kbd>Shift</kbd> + <kbd>F3</kbd></strong>
+            <h4 class="command-title">Find next / previous</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.replaceAll">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Confirm replace all</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.selectAllMatches">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Select all matches (in a file after search)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="search.action.openInEditor">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>Enter</kbd></strong>
+            <h4 class="command-title">Open search result in editor (after global search)</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Navigation</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.closeActiveEditor">
+            <strong class="command">
+              <kbCmdd>Ctrl</kbCmdd> + <kbd>W</kbd>
+            </strong>
+            <h4 class="command-title">Close editor / file</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.quickOpen">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>P</kbd></strong>
+            <h4 class="command-title">Quick open, go to file</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.gotoLine">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>G</kbd></strong>
+            <h4 class="command-title">Go to line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.marker.nextInFiles">
+            <strong class="command"><kbd>F8</kbd></strong>
+            <h4 class="command-title">Go to next error or warning</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.navigateBack">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>-</kbd></strong>
+            <h4 class="command-title">Go back (cursor)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.jumpToBracket" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd> + <kbd>A</kbd></strong>
+            <h4 class="command-title">Go to bracket</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.emmet.action.matchTag" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd> + <kbd>S</kbd></strong>
+            <h4 class="command-title">Emmet: go to matching pair</h4>
+          </li>
+          <li class="shortcuts--item" data-id="cursorHome, cursorEnd">
+            <strong class="command"><kbd>Home</kbd> / <kbd>End</kbd></strong>
+            <h4 class="command-title">Go to beginning / end of line</h4>
+          </li>
+          <li class="shortcuts--item" data-id="cursorTop, cursorBottom">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Home</kbd> / <kbd>End</kbd></strong>
+            <h4 class="command-title">Go to beginning / end of file</h4>
+          </li>
+          <li class="shortcuts--item" data-tp="own" data-id="breadcrumbs.focusAndSelect">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>X</kbd></strong>
+            <h4 class="command-title">Focus Breadcrumbs</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">File management</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">
+              (Ubuntu) Open containing folder (prev:
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="revealFileInOS" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">
+              (Windows) Reveal in file explorer (prev:
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="explorer.newFile" data-tp="own">
+            <strong class="command"><kbd>A</kbd></strong>
+            <h4 class="command-title">
+              Create new file (prev:
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="explorer.newFolder" data-tp="own">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>A</kbd></strong>
+            <h4 class="command-title">
+              Create new folder (prev:
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp; - sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.files.newUntitledFile">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>N</kbd></strong>
+            <h4 class="command-title">New file (Untitled)</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.files.save">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>S</kbd></strong>
+            <h4 class="command-title">Save</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.files.saveAs">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></strong>
+            <h4 class="command-title">Save as ...</h4>
+          </li>
+          <li class="shortcuts--item" data-id="list.collapseAll">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">
+              Fold all folders in sidebar (prev:
+              <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>&nbsp;- sidebar focus)
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.reopenClosedEditor">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></strong>
+            <h4 class="command-title">Reopen closed editor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Tab</kbd></strong>
+            <h4 class="command-title">Next editor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.quickOpenLeastRecentlyUsedEditorInGroup">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd></strong>
+            <h4 class="command-title">Prev editor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.quickOpenNavigateNextInEditorPicker">
+            <strong class="command"><kbd>(hold) Ctrl</kbd> + <kbd>Tab</kbd></strong>
+            <h4 class="command-title">Opened files, navigation with arrows</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Debug</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="editor.debug.action.toggleBreakpoint">
+            <strong class="command"><kbd>F9</kbd></strong>
+            <h4 class="command-title">Toggle breakpoint</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.debug.start, workbench.action.debug.continue">
+            <strong class="command"><kbd>F5</kbd></strong>
+            <h4 class="command-title">Start / continue</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.debug.stop">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>F5</kbd></strong>
+            <h4 class="command-title">Stop</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Integrated terminal</h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.terminal.toggleTerminal">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>`</kbd></strong>
+            <h4 class="command-title">Toggle integrated terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="terminal.focus">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>F</kbd></strong>
+            <h4 class="command-title">Focus integrated terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.copySelection">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd></strong>
+            <h4 class="command-title">Copy selection</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.paste">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></strong>
+            <h4 class="command-title">Paste</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.split">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>5</kbd></strong>
+            <h4 class="command-title">Split terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.kill" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>4</kbd></strong>
+            <h4 class="command-title">Kill active terminal</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusPreviousPane" data-tp="own">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">Focus previous terminal in pane</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.focusNextPane" data-tp="own">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Focus next terminal in pane</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneLeft" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&leftarrow;</kbd></strong>
+            <h4 class="command-title">Increase panel (terminal) width</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneRight" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&rightarrow;</kbd></strong>
+            <h4 class="command-title">Decrease panel (terminal) width</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneUp" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Increase panel (terminal) height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.terminal.resizePaneDown" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">Decrease panel (terminal) height</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.positionPanelBottom" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageDown</kbd></strong>
+            <h4 class="command-title">Move panel (terminal) to bottom</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.positionPanelRight" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd>&nbsp;&nbsp;<kbd>PageUp</kbd></strong>
+            <h4 class="command-title">Move panel (terminal) to right</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item without-command">
+        <h2 class="subtitle">Use from command palette <kbd>F1</kbd></h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="workbench.action.openSnippets">
+            <h4 class="command-title">Configure user snippets</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.foldAllBlockComments">
+            <h4 class="command-title">Fold All Blocks Comments</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.foldAll">
+            <h4 class="command-title">Fold All</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.unfoldAll">
+            <h4 class="command-title">Unfold All</h4>
+          </li>
+          <li class="shortcuts--item" data-id="openInDefaultBrowser.openInDefaultBrowser">
+            <h4 class="command-title">Open in default browser&nbsp;<a target="_blank"
+                href="https://github.com/peakchen90/vscode-open-in-default-browser">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.closeAllEditors">
+            <h4 class="command-title">Close all editors</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.saveWorkspaceAs">
+            <h4 class="command-title">Save workspace as...</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.closeUnmodifiedEditors">
+            <h4 class="command-title">Close saved editors in group</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.action.toggleZenMode">
+            <h4 class="command-title">View: toggle zen mode</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.transformToUppercase">
+            <h4 class="command-title">Transform to uppercase</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.transformToLowercase">
+            <h4 class="command-title">Transform to lowercase</h4>
+          </li>
+          <li class="shortcuts--item" data-id="workbench.files.action.compareWithSaved">
+            <h4 class="command-title">File: compare active file with saved</h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.gist.create">
+            <h4 class="command-title">GIST: create new gist&nbsp;<a href="https://github.com/kenhowardpdx/vscode-gist"
+                target="_blank">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.gist.open">
+            <h4 class="command-title">GIST: open gist&nbsp;<a href="https://github.com/kenhowardpdx/vscode-gist"
+                target="_blank">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.updateSettings">
+            <h4 class="command-title">Sync: update/upload settings&nbsp;<a
+                href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.downloadSettings">
+            <h4 class="command-title">Sync: download settings&nbsp;<a
+                href="https://github.com/shanalikhan/code-settings-sync" target="_blank">extension</a></h4>
+          </li>
+          <li class="shortcuts--item" data-id="extension.snippetSearch">
+            <h4 class="command-title">ES7 snippet search&nbsp;<a
+                href="https://github.com/dsznajder/vscode-es7-javascript-react-snippets" target="_blank">extension</a>
+            </h4>
+          </li>
+          <li class="shortcuts--item" data-id="gitlens.toggleFileBlame">
+            <h4 class="command-title">GitLens: Toggle file blame&nbsp;<a
+                href="https://github.com/eamodio/vscode-gitlens" target="_blank">extension</a></h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="extension.nestComments" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>/</kbd></strong>
+            <h4 class="command-title">Comment line / block</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>T</kbd></strong>
+            <h4 class="command-title">Toggle</h4>
+          </li>
+          <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
+            <h4 class="command-title">Toggle label</h4>
+          </li>
+          <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Jump to previous</h4>
+          </li>
+          <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">Jump to next</h4>
+          </li>
+          <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
+              <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">List</h4>
+          </li>
+          <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> +
+              <kbd>&downarrow;</kbd></strong>
+            <h4 class="command-title">List from all files</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path
+          </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="copy-workspace-path.add cd">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></strong>
+            <h4 class="command-title">Copy workspace path</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd> + <kbd>D</kbd></strong>
+            <h4 class="command-title">Duplicate file in sidebar</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="extension.convertToRGBA" data-tp="own">
+            <strong class="command"><kbd>CapsLock</kbd> + <kbd>R</kbd></strong>
+            <h4 class="command-title">Convert hex to rgba</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">
+          Extension:
+          <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a>
+        </h2>
+        <ul class="shortcuts">
+          <li class="shortcuts--item" data-id="extension.htmlTagWrap">
+            <strong class="command"><kbd>Alt</kbd> + <kbd>W</kbd></strong>
+            <h4 class="command-title">Wrap selected tag</h4>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <script src="assets/script.js"></script>
+</body>
+
 </html>

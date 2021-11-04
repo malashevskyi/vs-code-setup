@@ -122,6 +122,10 @@ kbd {
   align-items: center;
   flex-wrap: wrap;
   max-width: calc(100% - 180px);
+  width: 100%;
+}
+.command-title_full {
+  max-width: 100% !important;
 }
 .without-command .command-title::before {
   display: none;
