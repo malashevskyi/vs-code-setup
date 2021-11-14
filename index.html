@@ -43,34 +43,6 @@
 
     <ul class="list tab is-active">
       <li class="list--item">
-        <h2 class="subtitle">Old...</h2>
-        <ul class="shortcuts">
-
-          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run start">
-            <h4 class="command-title command-title_full">runTask | npm start (required tasks.json)</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run dev">
-            <h4 class="command-title command-title_full">runTask | npm dev (required tasks.json)</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run build">
-            <h4 class="command-title command-title_full">runTask | npm build (required tasks.json)</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask">
-            <h4 class="command-title">Task: run Task</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspaceInNewWindow">
-            <h4 class="command-title command-title_full">Open workspace in new window</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspace">
-            <h4 class="command-title">Open workspace</h4>
-          </li>
-          <li class="shortcuts--item without-command" data-id="editor.action.formatDocument">
-            <h4 class="command-title">Format document</h4>
-          </li>
-        </ul>
-      </li>
-
-      <li class="list--item">
         <h2 class="subtitle">General</h2>
         <ul class="shortcuts">
           <li class="shortcuts--item" data-id="editor.action.changeAll">
@@ -114,9 +86,69 @@
             <strong class="command"><kbd>o</kbd></strong>
             <h4 class="command-title">Insert line below</h4>
           </li>
-          <li class="shortcuts--item" data-id="editor.action.insertLineBefore">
+          <li class="shortcuts--item">
             <strong class="command"><kbd>Shift</kbd> + <kbd>o</kbd></strong>
             <h4 class="command-title">Insert line above</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>Number</kbd> + <kbd>GG</kbd></strong>
+            <h4 class="command-title">Go to line</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>v</kbd>&nbsp;<kbd>i</kbd>&nbsp;<kbd>(</kbd></strong>
+            <h4 class="command-title">View inside ()</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>v</kbd>&nbsp;<kbd>a</kbd>&nbsp;<kbd>(</kbd></strong>
+            <h4 class="command-title">View around ()</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>v</kbd>&nbsp;<kbd>i</kbd>&nbsp;<kbd>w</kbd></strong>
+            <h4 class="command-title">View inside a word</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>v</kbd>&nbsp;<kbd>i</kbd>&nbsp;<kbd>W</kbd></strong>
+            <h4 class="command-title">View inside a word (space delimited)</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>c</kbd>&nbsp;<kbd>a</kbd>&nbsp;<kbd>w</kbd></strong>
+            <h4 class="command-title">Change a word</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>g</kbd>&nbsp;<kbd>g</kbd>&nbsp;</strong>
+            <h4 class="command-title">Go to the first line of the document</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>G</kbd></strong>
+            <h4 class="command-title">Go to the last line of the document</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>I</kbd> / <kbd>A</kbd></strong>
+            <h4 class="command-title">Insert at the beginning / end of the line
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>e</kbd><kbd>a</kbd></strong>
+            <h4 class="command-title">Insert at the end of the word</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>Ctrl</kbd><kbd>h</kbd></strong>
+            <h4 class="command-title">Ins mode: delete the character before the cursor</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>Ctrl</kbd><kbd>w</kbd></strong>
+            <h4 class="command-title">Ins mode: delete the word before the cursor</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>r</kbd>/<kbd>R</kbd></strong>
+            <h4 class="command-title">Replace / replace until &nbsp;<kbd>esc</kbd>&nbsp; is pressed</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>g</kbd><kbd>u</kbd><kbd>u</kbd>/<kbd>g</kbd><kbd>U</kbd><kbd>U</kbd></strong>
+            <h4 class="command-title">Change current line to lower / upper</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>g</kbd><kbd>U</kbd><kbd>a</kbd><kbd>w</kbd></strong>
+            <h4 class="command-title">Change current word to upper</h4>
           </li>
         </ul>
       </li>
@@ -391,10 +423,7 @@
             <strong class="command"><kbd>Cmd</kbd> + <kbd>P</kbd></strong>
             <h4 class="command-title">Quick open, go to file</h4>
           </li>
-          <li class="shortcuts--item" data-id="workbench.action.gotoLine">
-            <strong class="command">(Vim)&nbsp;<kbd>Number</kbd> + <kbd>GG</kbd></strong>
-            <h4 class="command-title">Go to line</h4>
-          </li>
+
           <!-- <li class="shortcuts--item" data-id="editor.action.marker.nextInFiles">
               <strong class="command"><kbd>F8</kbd></strong>
               <h4 class="command-title">Go to next error or warning</h4>
@@ -684,26 +713,13 @@
       <li class="list--item">
         <h2 class="subtitle">
           Extension:
-          <a href="https://github.com/malashevskyi/vs-code-copy-workspace-path" target="_blank"> copy-workspace-path
-          </a>
-        </h2>
-        <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="copy-workspace-path.add cd">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd></strong>
-              <h4 class="command-title">Copy workspace path</h4>
-            </li> -->
-        </ul>
-      </li>
-      <li class="list--item">
-        <h2 class="subtitle">
-          Extension:
           <a href="https://github.com/sleistner/vscode-fileutils" target="_blank"> File Utils </a>
         </h2>
         <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Duplicate file in sidebar</h4>
-            </li> -->
+          <li class="shortcuts--item" data-id="fileutils.duplicateFile" data-tp="own">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>D</kbd></strong>
+            <h4 class="command-title">Duplicate file in sidebar</h4>
+          </li>
         </ul>
       </li>
       <li class="list--item">
@@ -712,10 +728,10 @@
           <a href="https://github.com/DakshMiglani/VSCode-Hex-To-RGBA" target="_blank"> hex-to-rgba </a>
         </h2>
         <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="extension.convertToRGBA" data-tp="own">
-              <strong class="command"><kbd>CapsLock</kbd> + <kbd>R</kbd></strong>
-              <h4 class="command-title">Convert hex to rgba</h4>
-            </li> -->
+          <li class="shortcuts--item" data-id="extension.convertToRGBA">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Cmd</kbd> + <kbd>T</kbd></strong>
+            <h4 class="command-title">Toggle hex / rgba</h4>
+          </li>
         </ul>
       </li>
       <li class="list--item">
@@ -724,13 +740,41 @@
           <a href="https://github.com/bgashler1/vscode-htmltagwrap" target="_blank"> htmltagwrap </a>
         </h2>
         <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="extension.htmlTagWrap">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>W</kbd></strong>
-              <h4 class="command-title">Wrap selected tag</h4>
-            </li> -->
+          <li class="shortcuts--item" data-id="extension.htmlTagWrap">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>W</kbd></strong>
+            <h4 class="command-title">Wrap selected tag</h4>
+          </li>
+        </ul>
+      </li>
+      <li class="list--item">
+        <h2 class="subtitle">Old...</h2>
+        <ul class="shortcuts">
+
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run start">
+            <h4 class="command-title command-title_full">runTask | npm start (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run dev">
+            <h4 class="command-title command-title_full">runTask | npm dev (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask|npm run build">
+            <h4 class="command-title command-title_full">runTask | npm build (required tasks.json)</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.tasks.runTask">
+            <h4 class="command-title">Task: run Task</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspaceInNewWindow">
+            <h4 class="command-title command-title_full">Open workspace in new window</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="workbench.action.openWorkspace">
+            <h4 class="command-title">Open workspace</h4>
+          </li>
+          <li class="shortcuts--item without-command" data-id="editor.action.formatDocument">
+            <h4 class="command-title">Format document</h4>
+          </li>
         </ul>
       </li>
     </ul>
+
     <ul class="list tab">
       <li class="list--item">
         <h2 class="subtitle">General</h2>
