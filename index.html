@@ -150,6 +150,23 @@
             <strong class="command"><kbd>g</kbd><kbd>U</kbd><kbd>a</kbd><kbd>w</kbd></strong>
             <h4 class="command-title">Change current word to upper</h4>
           </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>C</kbd>/<kbd>D</kbd></strong>
+            <h4 class="command-title">Change / delete to the end of the line</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>u</kbd></strong>
+            <h4 class="command-title">Undo last operation</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>Ctrl</kbd>/<kbd>r</kbd></strong>
+            <h4 class="command-title">Redo last operation</h4>
+          </li>
+          <li class="shortcuts--item">
+            <strong class="command"><kbd>*</kbd></strong>
+            <h4 class="command-title">Highlight all occurrences of the word under the cursor and go to next matched word
+            </h4>
+          </li>
         </ul>
       </li>
       <li class="list--item">
@@ -209,76 +226,44 @@
             <strong class="command"><kbd>Ctrl</kbd> + <kbd>space</kbd></strong>
             <h4 class="command-title">Trigger suggestion</h4>
           </li>
-
-          <!-- <li class="shortcuts--item" data-id="editor.action.rename">
-              <strong class="command"><kbd>F2</kbd></strong>
-              <h4 class="command-title">Rename file</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.goToReferences">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>F12</kbd></strong>
-              <h4 class="command-title">Show references / definition</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.revealDefinition">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
-              <h4 class="command-title">Go to definition</h4>
-            </li> -->
+          <li class="shortcuts--item" data-id="editor.action.goToReferences">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>F12</kbd></strong>
+            <h4 class="command-title">Show references / definition</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.revealDefinition">
+            <strong class="command"><kbd>Ctrl</kbd> + <kbd>mouse click</kbd></strong>
+            <h4 class="command-title">Go to definition</h4>
+          </li>
         </ul>
       </li>
       <li class="list--item">
         <h2 class="subtitle">Multi-cursor and selection</h2>
         <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>D</kbd></strong>
-              <h4 class="command-title">Add selection to next find match</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="-----">
-              <strong class="command"><kbd>Alt</kbd> + <kbd>mouse click</kbd></strong>
-              <h4 class="command-title">Insert cursor</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Insert cursor below / above</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="cursorMove (custom shortcut, see github)" data-tp="own">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&downarrow;</kbd> / <kbd>&uparrow;</kbd></strong>
-              <h4 class="command-title">Insert cursor by 7 lines below / above</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="cursorUndo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>U</kbd></strong>
-              <h4 class="command-title">Undo last cursor operation</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="undo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Undo last operation</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="redo">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd></strong>
-              <h4 class="command-title">Redo last operation</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></strong>
-              <h4 class="command-title">Insert cursor at end of each line selected</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="expandLineSelection">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
-              <h4 class="command-title">Select current line / lines</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.changeAll">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>F2</kbd></strong>
-              <h4 class="command-title">Select all occurrences of current selection</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.expand">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&rightarrow;</kbd></strong>
-              <h4 class="command-title">Expand selection</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="editor.action.smartSelect.shrink">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>&leftarrow;</kbd></strong>
-              <h4 class="command-title">Shrink selection</h4>
-            </li> -->
-          <!-- <li class="shortcuts--item" data-id="------">
-              <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>drag mouse</kbd></strong>
-              <h4 class="command-title">Box selection</h4>
-            </li> -->
+          <li class="shortcuts--item" data-id="editor.action.addSelectionToNextFindMatch">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>D</kbd></strong>
+            <h4 class="command-title">Add selection to next find match</h4>
+          </li>
+          <li class="shortcuts--item" data-id="-----">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>mouse click</kbd></strong>
+            <h4 class="command-title">Insert cursor</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertCursorBelow, editor.action.insertCursorAbove">
+            <strong class="command"><kbd>Opt</kbd> + <kbd>Cmd</kbd> + <kbd>&downarrow;</kbd> /
+              <kbd>&uparrow;</kbd></strong>
+            <h4 class="command-title">Insert cursor below / above</h4>
+          </li>
+          <li class="shortcuts--item" data-id="cursorUndo">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>U</kbd></strong>
+            <h4 class="command-title">Undo last cursor operation</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.insertCursorAtEndOfEachLineSelected">
+            <strong class="command"><kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>I</kbd></strong>
+            <h4 class="command-title">Insert cursor at end of each line selected</h4>
+          </li>
+          <li class="shortcuts--item" data-id="editor.action.changeAll">
+            <strong class="command"><kbd>Cmd</kbd> + <kbd>F2</kbd></strong>
+            <h4 class="command-title">Select all occurrences of current selection</h4>
+          </li>
         </ul>
       </li>
 
@@ -666,50 +651,38 @@
             </li> -->
         </ul>
       </li>
-      <li class="list--item">
-        <h2 class="subtitle">
-          Extension:
-          <a href="https://github.com/philsinatra/NestedCommentsVSCode" target="_blank"> Nest Comments </a>
-        </h2>
-        <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="extension.nestComments" data-tp="own">
-              <strong class="command"><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>/</kbd></strong>
-              <h4 class="command-title">Comment line / block</h4>
-            </li> -->
-        </ul>
-      </li>
-      <li class="list--item">
+      <!-- <li class="list--item">
         <h2 class="subtitle">
           Extension:
           <a href="https://github.com/alefragnani/vscode-bookmarks" target="_blank"> Bookmarks </a>
         </h2>
-        <ul class="shortcuts">
-          <!-- <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
+        <ul class="shortcuts"> -->
+      <!-- <li class="shortcuts--item" data-id="bookmarks.toggle" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>T</kbd></strong>
               <h4 class="command-title">Toggle</h4>
             </li> -->
-          <!-- <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
+      <!-- <li class="shortcuts--item" data-id="bookmarks.toggleLabeled" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>L</kbd></strong>
               <h4 class="command-title">Toggle label</h4>
             </li> -->
-          <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
+      <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToPrevious" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">Jump to previous</h4>
             </li> -->
-          <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
+      <!-- <li class="shortcuts--item" data-id="bookmarks.jumpToNext" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
               <h4 class="command-title">Jump to next</h4>
             </li> -->
-          <!-- <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
+      <!-- <li class="shortcuts--item" data-id="bookmarks.list" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&uparrow;</kbd></strong>
               <h4 class="command-title">List</h4>
             </li> -->
-          <!-- <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
+      <!-- <li class="shortcuts--item" data-id="bookmarks.listFromAllFiles" data-tp="own">
               <strong class="command"><kbd>Ctrl</kbd> + <kbd>B</kbd>&nbsp;&nbsp;<kbd>Ctrl</kbd> + <kbd>&downarrow;</kbd></strong>
               <h4 class="command-title">List from all files</h4>
             </li> -->
-        </ul>
-      </li>
+      <!-- </ul> -->
+      <!-- </li> -->
       <li class="list--item">
         <h2 class="subtitle">
           Extension:
