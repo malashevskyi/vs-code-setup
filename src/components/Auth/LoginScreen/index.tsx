@@ -7,12 +7,13 @@ import {
   Typography,
 } from "@mui/material";
 import { FormikValues, useFormik } from "formik";
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { useIntl } from "react-intl";
 import { useNavigate } from "react-router-dom";
-import { useClient } from "react-supabase";
+import { useSignIn } from "react-supabase";
 import { SnackbarContext } from "../../Base/SnackbarContext";
 import messages from "./messages";
+import commonMessages from "../../../common/messages";
 import validationSchema from "./validationSchema";
 
 const initialValues = {
@@ -23,13 +24,13 @@ const initialValues = {
 const LoginScreen: React.FC = () => {
   const intl = useIntl();
   const { setAlert } = useContext(SnackbarContext);
-  const supabaseClient = useClient();
   const navigate = useNavigate();
+  const [{ user }, signIn] = useSignIn();
 
   const onSubmit = async (values: FormikValues) => {
     const { email, password } = values;
     try {
-      await supabaseClient.auth.signIn({
+      await signIn({
         email,
         password,
       });
@@ -39,8 +40,6 @@ const LoginScreen: React.FC = () => {
         severity: "success",
         message: `${intl.formatMessage(messages.loginSuccess)}`,
       });
-
-      navigate("/");
     } catch (error) {
       setAlert({
         show: true,
@@ -48,10 +47,14 @@ const LoginScreen: React.FC = () => {
         message:
           error instanceof Error
             ? error.message
-            : intl.formatMessage(messages.defaultError),
+            : intl.formatMessage(commonMessages.defaultError),
       });
     }
   };
+
+  useEffect(() => {
+    if (user) navigate("/");
+  }, [user, navigate]);
 
   const { handleChange, values, errors, touched, handleBlur, handleSubmit } =
     useFormik({
