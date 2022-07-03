@@ -5,60 +5,72 @@ import {
   Dialog,
   DialogContent,
   DialogTitle,
+  FormControl,
   FormControlLabel,
   Grid,
+  InputLabel,
+  MenuItem,
+  Select,
   TextField,
 } from "@mui/material";
 import { FormikHelpers, useFormik } from "formik";
 import React, { useContext, useEffect, useState } from "react";
 import { useIntl } from "react-intl";
-import { useInsert, useSelect } from "react-supabase";
+import { useInsert } from "react-supabase";
 import commonMessages from "../../../common/messages";
 import { SnackbarContext } from "../../Base/SnackbarContext";
+import CreateNewShortcutGroupName from "../CreateNewShortcutGroupName";
 import messages from "./messages";
 import validationSchema from "./validationSchema";
 
-const CreateNewShortcut: React.FC = () => {
+interface Kbd {
+  id: number;
+  name: string;
+}
+
+interface FormikValues {
+  name: string;
+  kbds: Kbd[];
+  appId: string;
+  groupName: string;
+  extensionLink: string;
+  modified: boolean;
+}
+
+const initialValues: FormikValues = {
+  name: "",
+  kbds: [],
+  appId: "",
+  groupName: "",
+  extensionLink: "",
+  modified: false,
+};
+
+interface CreateNewShortcutProps {
+  groupNames: string[];
+}
+
+const CreateNewShortcut: React.FC<CreateNewShortcutProps> = ({
+  groupNames,
+}) => {
   const { setAlert } = useContext(SnackbarContext);
-  const [{ error }] = useSelect("vs_code_shortcuts");
+
   const [{ error: insertError }, insertShortcut] =
     useInsert("vs_code_shortcuts");
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [dialogGroupNameOpen, setDialogGroupNameOpen] = useState(false);
 
   const intl = useIntl();
 
-  interface Kbd {
-    id: number;
-    name: string;
-  }
-
-  interface FormikValues {
-    name: string;
-    kbds: Kbd[];
-    appId: string;
-    groupName: string;
-    extensionLink: string;
-    modified: boolean;
-  }
-
-  const initialValues: FormikValues = {
-    name: "",
-    kbds: [],
-    appId: "",
-    groupName: "",
-    extensionLink: "",
-    modified: false,
-  };
-
   useEffect(() => {
-    if (error) {
+    if (insertError) {
       setAlert({
         show: true,
         severity: "error",
-        message: error.message,
+        message: insertError?.message,
       });
     }
-  }, [error, setAlert]);
+  }, [insertError, setAlert]);
 
   const handleDialogOpen = () => {
     setDialogOpen(true);
@@ -109,21 +121,12 @@ const CreateNewShortcut: React.FC = () => {
     handleBlur,
     handleSubmit,
     setFieldValue,
+    isSubmitting,
   } = useFormik({
     initialValues,
     onSubmit: onSubmit,
     validationSchema,
   });
-
-  useEffect(() => {
-    if (insertError) {
-      setAlert({
-        show: true,
-        severity: "error",
-        message: insertError.message,
-      });
-    }
-  }, [insertError, setAlert]);
 
   const handleKbdsKeyDown = ({ code }: React.KeyboardEvent<HTMLDivElement>) => {
     let key = code.replace("Key", "");
@@ -139,16 +142,62 @@ const CreateNewShortcut: React.FC = () => {
     ]);
   };
 
+  const handleGroupDialogOpen = () => {
+    setDialogGroupNameOpen(true);
+  };
+  const handleDialogGroupNameClose = () => {
+    setDialogGroupNameOpen(false);
+  };
+
   return (
     <>
       <Button variant="contained" onClick={handleDialogOpen}>
         {intl.formatMessage(messages.createNew)}
       </Button>
+
+      <CreateNewShortcutGroupName
+        open={dialogGroupNameOpen}
+        onClose={handleDialogGroupNameClose}
+      />
+
       <Dialog open={dialogOpen} onClose={handleDialogClose}>
-        <DialogTitle>{intl.formatMessage(messages.title)}</DialogTitle>
+        <DialogTitle>
+          <Grid container spacing={2}>
+            <Grid item xs>
+              {intl.formatMessage(messages.title)}
+            </Grid>
+            <Grid item>
+              <Button variant="contained" onClick={handleGroupDialogOpen}>
+                {intl.formatMessage(messages.addNewGroupNameButton)}
+              </Button>
+            </Grid>
+          </Grid>
+        </DialogTitle>
         <DialogContent>
           <form onSubmit={handleSubmit}>
-            <Grid container spacing={2}>
+            <Grid container spacing={2} py={3}>
+              <Grid item xs={12}>
+                <FormControl fullWidth>
+                  <InputLabel id="group-names">
+                    {intl.formatMessage(messages.formGroupName)}
+                  </InputLabel>
+                  <Select
+                    labelId="group-names"
+                    label={intl.formatMessage(messages.formGroupName)}
+                    value={values.groupName}
+                    name="groupName"
+                    onChange={handleChange}
+                  >
+                    {groupNames.map((name) => {
+                      return (
+                        <MenuItem key={name} value={name}>
+                          {name.toString()}
+                        </MenuItem>
+                      );
+                    })}
+                  </Select>
+                </FormControl>
+              </Grid>
               <Grid item xs={12}>
                 <TextField
                   fullWidth
@@ -209,20 +258,6 @@ const CreateNewShortcut: React.FC = () => {
               <Grid item xs={12}>
                 <TextField
                   fullWidth
-                  label={intl.formatMessage(messages.formGroupName)}
-                  type="text"
-                  onChange={handleChange}
-                  onBlur={handleBlur}
-                  value={values.groupName}
-                  error={touched.groupName && !!errors.groupName}
-                  helperText={touched.groupName && errors.groupName}
-                  name="groupName"
-                  variant="standard"
-                />
-              </Grid>
-              <Grid item xs={12}>
-                <TextField
-                  fullWidth
                   label={intl.formatMessage(messages.formExtensionLink)}
                   type="text"
                   onChange={handleChange}
@@ -251,6 +286,7 @@ const CreateNewShortcut: React.FC = () => {
                   type="submit"
                   fullWidth
                   variant="contained"
+                  disabled={isSubmitting}
                   onClick={() => {
                     console.log("click");
                   }}

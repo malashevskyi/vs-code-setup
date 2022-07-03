@@ -41,4 +41,8 @@ export default defineMessages({
     id: "Dialog.CreateNewShortcut.formModified",
     defaultMessage: "Is modified",
   },
+  addNewGroupNameButton: {
+    id: "Dialog.CreateNewShortcut.addNewGroupNameButton",
+    defaultMessage: "New group name",
+  },
 });

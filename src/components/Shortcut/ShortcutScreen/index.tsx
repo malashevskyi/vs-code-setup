@@ -1,27 +1,34 @@
 import { Container, Grid, Typography } from "@mui/material";
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useMemo } from "react";
 import { useIntl } from "react-intl";
 import { useClient, useSelect } from "react-supabase";
 import { SnackbarContext } from "../../Base/SnackbarContext";
 import CreateNewShortcut from "../CreateNewShortcut";
 import messages from "./messages";
 
+interface ShortcutGroupName {
+  name: string;
+}
+
 const ShortcutScreen: React.FC = () => {
   const { setAlert } = useContext(SnackbarContext);
-  const [{ error }] = useSelect("vs_code_shortcuts");
+  const [{ error: selectShortcutsError }] = useSelect("vs_code_shortcuts");
+  const [{ error: selectGroupNamesError, data: groupNames }] =
+    useSelect<ShortcutGroupName>("shortcut_group_names");
   const intl = useIntl();
   const supabaseClient = useClient();
   const user = supabaseClient.auth.user();
 
   useEffect(() => {
-    if (error) {
+    if (selectShortcutsError || selectGroupNamesError) {
       setAlert({
         show: true,
         severity: "error",
-        message: error.message,
+        message:
+          selectShortcutsError?.message || selectGroupNamesError?.message,
       });
     }
-  }, [error, setAlert]);
+  }, [selectShortcutsError, selectGroupNamesError, setAlert]);
 
   return (
     <Container>
@@ -33,7 +40,9 @@ const ShortcutScreen: React.FC = () => {
         </Grid>
         {user && (
           <Grid item>
-            <CreateNewShortcut />
+            <CreateNewShortcut
+              groupNames={(groupNames || []).map(({ name }) => name)}
+            />
           </Grid>
         )}
       </Grid>
